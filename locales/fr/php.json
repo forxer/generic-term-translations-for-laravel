@@ -42,7 +42,7 @@
     "delete": "supprimer",
     "delete_something": "supprimer :something",
     "dev": "Développement",
-    "developed_by": "Développé par <a href=\":author_url\" target=\"_blank\">:author_name</a>",
+    "developed_by": "Développé par <a href=':author_url' target='_blank'>:author_name</a>",
     "disable": "désactiver",
     "disable_something": "désactiver :something",
     "disabled": "désactivé",

@@ -1,0 +1,12 @@
+build/
+node_modules/
+tmp
+/vendor
+
+.env
+
+*.cache
+*.clover
+*.orig
+
+composer.lock

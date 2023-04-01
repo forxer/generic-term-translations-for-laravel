@@ -7,12 +7,6 @@ CHANGELOG
 - Build locales with laravel-lang/status-generator
 
 
-1.0.2 (2023-03-30)
-------------------
-
-- Build locales with laravel-lang/status-generator
-
-
 1.0.1 (2023-03-30)
 ------------------
 

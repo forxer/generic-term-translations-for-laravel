@@ -25,5 +25,4 @@ return [
     'milliliter' => 'milliliter',
     'deciliter' => 'deciliter',
     'liter' => 'liter',
-
 ];

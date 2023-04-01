@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     '401_title' => '401 error - Unauthorized',
     '401_message' => 'Sorry but an authentication is required to view this document.',
 

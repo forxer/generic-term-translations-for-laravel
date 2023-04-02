@@ -1,1487 +1,2561 @@
 # Glossary
 
 
-- [**Action**](#action): add, add_something, edit, edit_something, show, show_something, preview, preview_something, save, save_something, send, send_something, enable, enable_something, disable, disable_something, archive, archive_something, unarchive, unarchive_something, refresh, refresh_something, reload, reload_something, restore, restore_something, delete, delete_something, cancel, cancel_something, duplicate, duplicate_something, close, close_something, search, browse, up, down
-- [**Back**](#back): simple, home, top, list, something, somethings
-- [**Email**](#email): hello, cordially, automatic, do_not_reply
-- [**Env**](#env): prod, staging, preprod, test, dev, local
-- [**Errors**](#errors): 401_title, 401_message, 403_title, 403_message, 404_title, 404_message, 419_title, 419_message, 500_title, 500_message, 503_title, 503_message
-- [**Misc**](#misc): yes, no, all, all_fem, previous, previous_fem, next, next_fem, or, other, with, without, recycle_bin, recycle_bin_of, archives, archives_of, required, info_required_fields, page_n, developed_by, under_maintenance, quoted
-- [**Number**](#number): decimals_separator, thousands_separator
-- [**Placeholder**](#placeholder): search
-- [**Status**](#status): saved, saved_fem, active, active_fem, inactive, inactive_fem, active_inactive, active_inactive_fem, only_actives, only_actives_fem, only_inactives, only_inactives_fem, enabled, enabled_fem, disabled, disabled_fem, online, offline, info, success, warning, error
-- [**Unit**](#unit): b, bit, bits, B, byte, bytes, kB, MB, GB, TB, millimeter, centimeter, meter, kilometer, gram, kilogram, milliliter, deciliter, liter
+- [**Action**](#action)
+    - [Add](#add)
+    - [Add Something](#add-something)
+    - [Edit](#edit)
+    - [Edit Something](#edit-something)
+    - [Show](#show)
+    - [Show Something](#show-something)
+    - [Preview](#preview)
+    - [Preview Something](#preview-something)
+    - [Save](#save)
+    - [Save Something](#save-something)
+    - [Send](#send)
+    - [Send Something](#send-something)
+    - [Enable](#enable)
+    - [Enable Something](#enable-something)
+    - [Disable](#disable)
+    - [Disable Something](#disable-something)
+    - [Archive](#archive)
+    - [Archive Something](#archive-something)
+    - [Unarchive](#unarchive)
+    - [Unarchive Something](#unarchive-something)
+    - [Refresh](#refresh)
+    - [Refresh Something](#refresh-something)
+    - [Reload](#reload)
+    - [Reload Something](#reload-something)
+    - [Restore](#restore)
+    - [Restore Something](#restore-something)
+    - [Delete](#delete)
+    - [Delete Something](#delete-something)
+    - [Cancel](#cancel)
+    - [Cancel Something](#cancel-something)
+    - [Duplicate](#duplicate)
+    - [Duplicate Something](#duplicate-something)
+    - [Close](#close)
+    - [Close Something](#close-something)
+    - [Search](#search)
+    - [Browse](#browse)
+    - [Up](#up)
+    - [Down](#down)
+- [**Back**](#back)
+    - [Simple](#simple)
+    - [Home](#home)
+    - [Top](#top)
+    - [List](#list)
+    - [Something](#something)
+    - [Somethings](#somethings)
+- [**Email**](#email)
+    - [Hello](#hello)
+    - [Cordially](#cordially)
+    - [Automatic](#automatic)
+    - [Do Not Reply](#do-not-reply)
+- [**Env**](#env)
+    - [Prod](#prod)
+    - [Staging](#staging)
+    - [Preprod](#preprod)
+    - [Test](#test)
+    - [Dev](#dev)
+    - [Local](#local)
+- [**Errors**](#errors)
+    - [401 Title](#401-title)
+    - [401 Message](#401-message)
+    - [403 Title](#403-title)
+    - [403 Message](#403-message)
+    - [404 Title](#404-title)
+    - [404 Message](#404-message)
+    - [419 Title](#419-title)
+    - [419 Message](#419-message)
+    - [500 Title](#500-title)
+    - [500 Message](#500-message)
+    - [503 Title](#503-title)
+    - [503 Message](#503-message)
+- [**Misc**](#misc)
+    - [Yes](#yes)
+    - [No](#no)
+    - [All](#all)
+    - [All Fem](#all-fem)
+    - [Previous](#previous)
+    - [Previous Fem](#previous-fem)
+    - [Next](#next)
+    - [Next Fem](#next-fem)
+    - [Or](#or)
+    - [Other](#other)
+    - [With](#with)
+    - [Without](#without)
+    - [Recycle Bin](#recycle-bin)
+    - [Recycle Bin Of](#recycle-bin-of)
+    - [Archives](#archives)
+    - [Archives Of](#archives-of)
+    - [Required](#required)
+    - [Info Required Fields](#info-required-fields)
+    - [Page N](#page-n)
+    - [Developed By](#developed-by)
+    - [Under Maintenance](#under-maintenance)
+    - [Quoted](#quoted)
+- [**Number**](#number)
+    - [Decimals Separator](#decimals-separator)
+    - [Thousands Separator](#thousands-separator)
+- [**Placeholder**](#placeholder)
+    - [Search](#search)
+- [**Status**](#status)
+    - [Saved](#saved)
+    - [Saved Fem](#saved-fem)
+    - [Active](#active)
+    - [Active Fem](#active-fem)
+    - [Inactive](#inactive)
+    - [Inactive Fem](#inactive-fem)
+    - [Active Inactive](#active-inactive)
+    - [Active Inactive Fem](#active-inactive-fem)
+    - [Only Actives](#only-actives)
+    - [Only Actives Fem](#only-actives-fem)
+    - [Only Inactives](#only-inactives)
+    - [Only Inactives Fem](#only-inactives-fem)
+    - [Enabled](#enabled)
+    - [Enabled Fem](#enabled-fem)
+    - [Disabled](#disabled)
+    - [Disabled Fem](#disabled-fem)
+    - [Online](#online)
+    - [Offline](#offline)
+    - [Info](#info)
+    - [Success](#success)
+    - [Warning](#warning)
+    - [Error](#error)
+- [**Unit**](#unit)
+    - [B](#b)
+    - [Bit](#bit)
+    - [Bits](#bits)
+    - [B](#b)
+    - [Byte](#byte)
+    - [Bytes](#bytes)
+    - [Kb](#kb)
+    - [Mb](#mb)
+    - [Gb](#gb)
+    - [Tb](#tb)
+    - [Millimeter](#millimeter)
+    - [Centimeter](#centimeter)
+    - [Meter](#meter)
+    - [Kilometer](#kilometer)
+    - [Gram](#gram)
+    - [Kilogram](#kilogram)
+    - [Milliliter](#milliliter)
+    - [Deciliter](#deciliter)
+    - [Liter](#liter)
 
 
 ## Action
 
 ### Add
 
-Key: `add`
-Value: `add`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.add')
-````
+- Key: `add`
+- Value: `add`
+- Usage: `action.add`
 
-[Back to top ^](#glossary)
-### Add_Something
+```php
+trans('action.add');
+```
 
-Key: `add_something`
-Value: `add :something`
-Usage:
-
-````php
-trans('action.add_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Add Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `add_something`
+- Value: `add :something`
+- Usage: `action.add_something`
+
+```php
+trans('action.add_something', [
+    'something' => 'something',
+]);
+
+trans('action.add_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Edit
 
-Key: `edit`
-Value: `edit`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.edit')
-````
+- Key: `edit`
+- Value: `edit`
+- Usage: `action.edit`
 
-[Back to top ^](#glossary)
-### Edit_Something
+```php
+trans('action.edit');
+```
 
-Key: `edit_something`
-Value: `edit :something`
-Usage:
-
-````php
-trans('action.edit_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Edit Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `edit_something`
+- Value: `edit :something`
+- Usage: `action.edit_something`
+
+```php
+trans('action.edit_something', [
+    'something' => 'something',
+]);
+
+trans('action.edit_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Show
 
-Key: `show`
-Value: `show`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.show')
-````
+- Key: `show`
+- Value: `show`
+- Usage: `action.show`
 
-[Back to top ^](#glossary)
-### Show_Something
+```php
+trans('action.show');
+```
 
-Key: `show_something`
-Value: `show :something`
-Usage:
-
-````php
-trans('action.show_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Show Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `show_something`
+- Value: `show :something`
+- Usage: `action.show_something`
+
+```php
+trans('action.show_something', [
+    'something' => 'something',
+]);
+
+trans('action.show_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Preview
 
-Key: `preview`
-Value: `preview`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.preview')
-````
+- Key: `preview`
+- Value: `preview`
+- Usage: `action.preview`
 
-[Back to top ^](#glossary)
-### Preview_Something
+```php
+trans('action.preview');
+```
 
-Key: `preview_something`
-Value: `preview :something`
-Usage:
-
-````php
-trans('action.preview_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Preview Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `preview_something`
+- Value: `preview :something`
+- Usage: `action.preview_something`
+
+```php
+trans('action.preview_something', [
+    'something' => 'something',
+]);
+
+trans('action.preview_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Save
 
-Key: `save`
-Value: `save`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.save')
-````
+- Key: `save`
+- Value: `save`
+- Usage: `action.save`
 
-[Back to top ^](#glossary)
-### Save_Something
+```php
+trans('action.save');
+```
 
-Key: `save_something`
-Value: `save :something`
-Usage:
-
-````php
-trans('action.save_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Save Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `save_something`
+- Value: `save :something`
+- Usage: `action.save_something`
+
+```php
+trans('action.save_something', [
+    'something' => 'something',
+]);
+
+trans('action.save_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Send
 
-Key: `send`
-Value: `send`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.send')
-````
+- Key: `send`
+- Value: `send`
+- Usage: `action.send`
 
-[Back to top ^](#glossary)
-### Send_Something
+```php
+trans('action.send');
+```
 
-Key: `send_something`
-Value: `send :something`
-Usage:
-
-````php
-trans('action.send_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Send Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `send_something`
+- Value: `send :something`
+- Usage: `action.send_something`
+
+```php
+trans('action.send_something', [
+    'something' => 'something',
+]);
+
+trans('action.send_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Enable
 
-Key: `enable`
-Value: `enable`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.enable')
-````
+- Key: `enable`
+- Value: `enable`
+- Usage: `action.enable`
 
-[Back to top ^](#glossary)
-### Enable_Something
+```php
+trans('action.enable');
+```
 
-Key: `enable_something`
-Value: `enable :something`
-Usage:
-
-````php
-trans('action.enable_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Enable Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `enable_something`
+- Value: `enable :something`
+- Usage: `action.enable_something`
+
+```php
+trans('action.enable_something', [
+    'something' => 'something',
+]);
+
+trans('action.enable_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Disable
 
-Key: `disable`
-Value: `disable`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.disable')
-````
+- Key: `disable`
+- Value: `disable`
+- Usage: `action.disable`
 
-[Back to top ^](#glossary)
-### Disable_Something
+```php
+trans('action.disable');
+```
 
-Key: `disable_something`
-Value: `disable :something`
-Usage:
-
-````php
-trans('action.disable_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Disable Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `disable_something`
+- Value: `disable :something`
+- Usage: `action.disable_something`
+
+```php
+trans('action.disable_something', [
+    'something' => 'something',
+]);
+
+trans('action.disable_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Archive
 
-Key: `archive`
-Value: `archive`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.archive')
-````
+- Key: `archive`
+- Value: `archive`
+- Usage: `action.archive`
 
-[Back to top ^](#glossary)
-### Archive_Something
+```php
+trans('action.archive');
+```
 
-Key: `archive_something`
-Value: `archive :something`
-Usage:
-
-````php
-trans('action.archive_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Archive Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `archive_something`
+- Value: `archive :something`
+- Usage: `action.archive_something`
+
+```php
+trans('action.archive_something', [
+    'something' => 'something',
+]);
+
+trans('action.archive_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Unarchive
 
-Key: `unarchive`
-Value: `unarchive`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.unarchive')
-````
+- Key: `unarchive`
+- Value: `unarchive`
+- Usage: `action.unarchive`
 
-[Back to top ^](#glossary)
-### Unarchive_Something
+```php
+trans('action.unarchive');
+```
 
-Key: `unarchive_something`
-Value: `unarchive :something`
-Usage:
-
-````php
-trans('action.unarchive_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Unarchive Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `unarchive_something`
+- Value: `unarchive :something`
+- Usage: `action.unarchive_something`
+
+```php
+trans('action.unarchive_something', [
+    'something' => 'something',
+]);
+
+trans('action.unarchive_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Refresh
 
-Key: `refresh`
-Value: `refresh`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.refresh')
-````
+- Key: `refresh`
+- Value: `refresh`
+- Usage: `action.refresh`
 
-[Back to top ^](#glossary)
-### Refresh_Something
+```php
+trans('action.refresh');
+```
 
-Key: `refresh_something`
-Value: `refresh :something`
-Usage:
-
-````php
-trans('action.refresh_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Refresh Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `refresh_something`
+- Value: `refresh :something`
+- Usage: `action.refresh_something`
+
+```php
+trans('action.refresh_something', [
+    'something' => 'something',
+]);
+
+trans('action.refresh_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Reload
 
-Key: `reload`
-Value: `reload`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.reload')
-````
+- Key: `reload`
+- Value: `reload`
+- Usage: `action.reload`
 
-[Back to top ^](#glossary)
-### Reload_Something
+```php
+trans('action.reload');
+```
 
-Key: `reload_something`
-Value: `reload :something`
-Usage:
-
-````php
-trans('action.reload_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Reload Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `reload_something`
+- Value: `reload :something`
+- Usage: `action.reload_something`
+
+```php
+trans('action.reload_something', [
+    'something' => 'something',
+]);
+
+trans('action.reload_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Restore
 
-Key: `restore`
-Value: `restore`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.restore')
-````
+- Key: `restore`
+- Value: `restore`
+- Usage: `action.restore`
 
-[Back to top ^](#glossary)
-### Restore_Something
+```php
+trans('action.restore');
+```
 
-Key: `restore_something`
-Value: `restore :something`
-Usage:
-
-````php
-trans('action.restore_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Restore Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `restore_something`
+- Value: `restore :something`
+- Usage: `action.restore_something`
+
+```php
+trans('action.restore_something', [
+    'something' => 'something',
+]);
+
+trans('action.restore_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Delete
 
-Key: `delete`
-Value: `delete`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.delete')
-````
+- Key: `delete`
+- Value: `delete`
+- Usage: `action.delete`
 
-[Back to top ^](#glossary)
-### Delete_Something
+```php
+trans('action.delete');
+```
 
-Key: `delete_something`
-Value: `delete :something`
-Usage:
-
-````php
-trans('action.delete_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Delete Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `delete_something`
+- Value: `delete :something`
+- Usage: `action.delete_something`
+
+```php
+trans('action.delete_something', [
+    'something' => 'something',
+]);
+
+trans('action.delete_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Cancel
 
-Key: `cancel`
-Value: `cancel`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.cancel')
-````
+- Key: `cancel`
+- Value: `cancel`
+- Usage: `action.cancel`
 
-[Back to top ^](#glossary)
-### Cancel_Something
+```php
+trans('action.cancel');
+```
 
-Key: `cancel_something`
-Value: `cancel :something`
-Usage:
-
-````php
-trans('action.cancel_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Cancel Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `cancel_something`
+- Value: `cancel :something`
+- Usage: `action.cancel_something`
+
+```php
+trans('action.cancel_something', [
+    'something' => 'something',
+]);
+
+trans('action.cancel_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Duplicate
 
-Key: `duplicate`
-Value: `duplicate`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.duplicate')
-````
+- Key: `duplicate`
+- Value: `duplicate`
+- Usage: `action.duplicate`
 
-[Back to top ^](#glossary)
-### Duplicate_Something
+```php
+trans('action.duplicate');
+```
 
-Key: `duplicate_something`
-Value: `duplicate :something`
-Usage:
-
-````php
-trans('action.duplicate_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Duplicate Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `duplicate_something`
+- Value: `duplicate :something`
+- Usage: `action.duplicate_something`
+
+```php
+trans('action.duplicate_something', [
+    'something' => 'something',
+]);
+
+trans('action.duplicate_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Close
 
-Key: `close`
-Value: `close`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.close')
-````
+- Key: `close`
+- Value: `close`
+- Usage: `action.close`
 
-[Back to top ^](#glossary)
-### Close_Something
+```php
+trans('action.close');
+```
 
-Key: `close_something`
-Value: `close :something`
-Usage:
-
-````php
-trans('action.close_something')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Close Something
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `close_something`
+- Value: `close :something`
+- Usage: `action.close_something`
+
+```php
+trans('action.close_something', [
+    'something' => 'something',
+]);
+
+trans('action.close_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Search
 
-Key: `search`
-Value: `search`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.search')
-````
+- Key: `search`
+- Value: `search`
+- Usage: `action.search`
+
+```php
+trans('action.search');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Browse
 
-Key: `browse`
-Value: `browse`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.browse')
-````
+- Key: `browse`
+- Value: `browse`
+- Usage: `action.browse`
+
+```php
+trans('action.browse');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Up
 
-Key: `up`
-Value: `up`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.up')
-````
+- Key: `up`
+- Value: `up`
+- Usage: `action.up`
+
+```php
+trans('action.up');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Down
 
-Key: `down`
-Value: `down`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('action.down')
-````
+- Key: `down`
+- Value: `down`
+- Usage: `action.down`
+
+```php
+trans('action.down');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ## Back
 
 ### Simple
 
-Key: `simple`
-Value: `back`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('back.simple')
-````
+- Key: `simple`
+- Value: `back`
+- Usage: `back.simple`
+
+```php
+trans('back.simple');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Home
 
-Key: `home`
-Value: `back to home`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('back.home')
-````
+- Key: `home`
+- Value: `back to home`
+- Usage: `back.home`
+
+```php
+trans('back.home');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Top
 
-Key: `top`
-Value: `back to top`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('back.top')
-````
+- Key: `top`
+- Value: `back to top`
+- Usage: `back.top`
+
+```php
+trans('back.top');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### List
 
-Key: `list`
-Value: `back to the list`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('back.list')
-````
+- Key: `list`
+- Value: `back to the list`
+- Usage: `back.list`
+
+```php
+trans('back.list');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Something
 
-Key: `something`
-Value: `back to :something`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('back.something')
-````
+- Key: `something`
+- Value: `back to :something`
+- Usage: `back.something`
+
+```php
+trans('back.something', [
+    'something' => 'something',
+]);
+
+trans('back.something', [
+    'something' => e($something),
+]);
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Somethings
 
-Key: `somethings`
-Value: `back to :somethings`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('back.somethings')
-````
+- Key: `somethings`
+- Value: `back to :somethings`
+- Usage: `back.somethings`
+
+```php
+trans('back.somethings', [
+    'somethings' => 'somethings',
+]);
+
+trans('back.somethings', [
+    'somethings' => e($somethings),
+]);
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ## Email
 
 ### Hello
 
-Key: `hello`
-Value: `Hello,`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('email.hello')
-````
+- Key: `hello`
+- Value: `Hello,`
+- Usage: `email.hello`
+
+```php
+trans('email.hello');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Cordially
 
-Key: `cordially`
-Value: `Cordially,`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('email.cordially')
-````
+- Key: `cordially`
+- Value: `Cordially,`
+- Usage: `email.cordially`
+
+```php
+trans('email.cordially');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Automatic
 
-Key: `automatic`
-Value: `This is an automatic message.`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('email.automatic')
-````
+- Key: `automatic`
+- Value: `This is an automatic message.`
+- Usage: `email.automatic`
 
-[Back to top ^](#glossary)
-### Do_Not_Reply
+```php
+trans('email.automatic');
+```
 
-Key: `do_not_reply`
-Value: `Please do not answer it, your answer will be lost.`
-Usage:
-
-````php
-trans('email.do_not_reply')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Do Not Reply
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `do_not_reply`
+- Value: `Please do not answer it, your answer will be lost.`
+- Usage: `email.do_not_reply`
+
+```php
+trans('email.do_not_reply');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ## Env
 
 ### Prod
 
-Key: `prod`
-Value: `Production`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('env.prod')
-````
+- Key: `prod`
+- Value: `Production`
+- Usage: `env.prod`
+
+```php
+trans('env.prod');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Staging
 
-Key: `staging`
-Value: `Staging`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('env.staging')
-````
+- Key: `staging`
+- Value: `Staging`
+- Usage: `env.staging`
+
+```php
+trans('env.staging');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Preprod
 
-Key: `preprod`
-Value: `Preproduction`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('env.preprod')
-````
+- Key: `preprod`
+- Value: `Preproduction`
+- Usage: `env.preprod`
+
+```php
+trans('env.preprod');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Test
 
-Key: `test`
-Value: `Test`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('env.test')
-````
+- Key: `test`
+- Value: `Test`
+- Usage: `env.test`
+
+```php
+trans('env.test');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Dev
 
-Key: `dev`
-Value: `Development`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('env.dev')
-````
+- Key: `dev`
+- Value: `Development`
+- Usage: `env.dev`
+
+```php
+trans('env.dev');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Local
 
-Key: `local`
-Value: `Local`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('env.local')
-````
+- Key: `local`
+- Value: `Local`
+- Usage: `env.local`
+
+```php
+trans('env.local');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ## Errors
 
-### 401_Title
+### 401 Title
 
-Key: `401_title`
-Value: `401 error - Unauthorized`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('errors.401_title')
-````
+- Key: `401_title`
+- Value: `401 error - Unauthorized`
+- Usage: `errors.401_title`
 
-[Back to top ^](#glossary)
-### 401_Message
+```php
+trans('errors.401_title');
+```
 
-Key: `401_message`
-Value: `Sorry but an authentication is required to view this document.`
-Usage:
-
-````php
-trans('errors.401_message')
-````
+</details>
 
 [Back to top ^](#glossary)
-### 403_Title
 
-Key: `403_title`
-Value: `403 error - Acces denied`
-Usage:
+### 401 Message
 
-````php
-trans('errors.403_title')
-````
+<details>
+<summary>Click for details and usage</summary>
 
-[Back to top ^](#glossary)
-### 403_Message
+- Key: `401_message`
+- Value: `Sorry but an authentication is required to view this document.`
+- Usage: `errors.401_message`
 
-Key: `403_message`
-Value: `Sorry, but you do not have permission to view this document.`
-Usage:
+```php
+trans('errors.401_message');
+```
 
-````php
-trans('errors.403_message')
-````
+</details>
 
 [Back to top ^](#glossary)
-### 404_Title
 
-Key: `404_title`
-Value: `404 error - Document not found`
-Usage:
+### 403 Title
 
-````php
-trans('errors.404_title')
-````
+<details>
+<summary>Click for details and usage</summary>
 
-[Back to top ^](#glossary)
-### 404_Message
+- Key: `403_title`
+- Value: `403 error - Acces denied`
+- Usage: `errors.403_title`
 
-Key: `404_message`
-Value: `Sorry but the document you are looking for does not exist.`
-Usage:
+```php
+trans('errors.403_title');
+```
 
-````php
-trans('errors.404_message')
-````
+</details>
 
 [Back to top ^](#glossary)
-### 419_Title
 
-Key: `419_title`
-Value: `419 error - Your session has expired`
-Usage:
+### 403 Message
 
-````php
-trans('errors.419_title')
-````
+<details>
+<summary>Click for details and usage</summary>
 
-[Back to top ^](#glossary)
-### 419_Message
+- Key: `403_message`
+- Value: `Sorry, but you do not have permission to view this document.`
+- Usage: `errors.403_message`
 
-Key: `419_message`
-Value: `Sorry, please login again.`
-Usage:
+```php
+trans('errors.403_message');
+```
 
-````php
-trans('errors.419_message')
-````
+</details>
 
 [Back to top ^](#glossary)
-### 500_Title
 
-Key: `500_title`
-Value: `500 error - Internal server error`
-Usage:
+### 404 Title
 
-````php
-trans('errors.500_title')
-````
+<details>
+<summary>Click for details and usage</summary>
 
-[Back to top ^](#glossary)
-### 500_Message
+- Key: `404_title`
+- Value: `404 error - Document not found`
+- Usage: `errors.404_title`
 
-Key: `500_message`
-Value: `The HTTP server encountered an unexpected condition that prevented it from processing the request.`
-Usage:
+```php
+trans('errors.404_title');
+```
 
-````php
-trans('errors.500_message')
-````
+</details>
 
 [Back to top ^](#glossary)
-### 503_Title
 
-Key: `503_title`
-Value: `Maintenance`
-Usage:
+### 404 Message
 
-````php
-trans('errors.503_title')
-````
+<details>
+<summary>Click for details and usage</summary>
 
-[Back to top ^](#glossary)
-### 503_Message
+- Key: `404_message`
+- Value: `Sorry but the document you are looking for does not exist.`
+- Usage: `errors.404_message`
 
-Key: `503_message`
-Value: `Back in a few minutes ...`
-Usage:
+```php
+trans('errors.404_message');
+```
 
-````php
-trans('errors.503_message')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### 419 Title
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `419_title`
+- Value: `419 error - Your session has expired`
+- Usage: `errors.419_title`
+
+```php
+trans('errors.419_title');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### 419 Message
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `419_message`
+- Value: `Sorry, please login again.`
+- Usage: `errors.419_message`
+
+```php
+trans('errors.419_message');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### 500 Title
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `500_title`
+- Value: `500 error - Internal server error`
+- Usage: `errors.500_title`
+
+```php
+trans('errors.500_title');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### 500 Message
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `500_message`
+- Value: `The HTTP server encountered an unexpected condition that prevented it from processing the request.`
+- Usage: `errors.500_message`
+
+```php
+trans('errors.500_message');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### 503 Title
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `503_title`
+- Value: `Maintenance`
+- Usage: `errors.503_title`
+
+```php
+trans('errors.503_title');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### 503 Message
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `503_message`
+- Value: `Back in a few minutes ...`
+- Usage: `errors.503_message`
+
+```php
+trans('errors.503_message');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ## Misc
 
 ### Yes
 
-Key: `yes`
-Value: `yes`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('misc.yes')
-````
+- Key: `yes`
+- Value: `yes`
+- Usage: `misc.yes`
+
+```php
+trans('misc.yes');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### No
 
-Key: `no`
-Value: `no`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('misc.no')
-````
+- Key: `no`
+- Value: `no`
+- Usage: `misc.no`
+
+```php
+trans('misc.no');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### All
 
-Key: `all`
-Value: `all`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('misc.all')
-````
+- Key: `all`
+- Value: `all`
+- Usage: `misc.all`
 
-[Back to top ^](#glossary)
-### All_Fem
+```php
+trans('misc.all');
+```
 
-Key: `all_fem`
-Value: `all`
-Usage:
-
-````php
-trans('misc.all_fem')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### All Fem
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `all_fem`
+- Value: `all`
+- Usage: `misc.all_fem`
+
+```php
+trans('misc.all_fem');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Previous
 
-Key: `previous`
-Value: `previous`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('misc.previous')
-````
+- Key: `previous`
+- Value: `previous`
+- Usage: `misc.previous`
 
-[Back to top ^](#glossary)
-### Previous_Fem
+```php
+trans('misc.previous');
+```
 
-Key: `previous_fem`
-Value: `previous`
-Usage:
-
-````php
-trans('misc.previous_fem')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Previous Fem
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `previous_fem`
+- Value: `previous`
+- Usage: `misc.previous_fem`
+
+```php
+trans('misc.previous_fem');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Next
 
-Key: `next`
-Value: `next`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('misc.next')
-````
+- Key: `next`
+- Value: `next`
+- Usage: `misc.next`
 
-[Back to top ^](#glossary)
-### Next_Fem
+```php
+trans('misc.next');
+```
 
-Key: `next_fem`
-Value: `next`
-Usage:
-
-````php
-trans('misc.next_fem')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Next Fem
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `next_fem`
+- Value: `next`
+- Usage: `misc.next_fem`
+
+```php
+trans('misc.next_fem');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Or
 
-Key: `or`
-Value: `or`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('misc.or')
-````
+- Key: `or`
+- Value: `or`
+- Usage: `misc.or`
+
+```php
+trans('misc.or');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Other
 
-Key: `other`
-Value: `other`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('misc.other')
-````
+- Key: `other`
+- Value: `other`
+- Usage: `misc.other`
+
+```php
+trans('misc.other');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### With
 
-Key: `with`
-Value: `with`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('misc.with')
-````
+- Key: `with`
+- Value: `with`
+- Usage: `misc.with`
+
+```php
+trans('misc.with');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Without
 
-Key: `without`
-Value: `without`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('misc.without')
-````
+- Key: `without`
+- Value: `without`
+- Usage: `misc.without`
 
-[Back to top ^](#glossary)
-### Recycle_Bin
+```php
+trans('misc.without');
+```
 
-Key: `recycle_bin`
-Value: `recycle bin`
-Usage:
-
-````php
-trans('misc.recycle_bin')
-````
+</details>
 
 [Back to top ^](#glossary)
-### Recycle_Bin_Of
 
-Key: `recycle_bin_of`
-Value: `recycle bin of :things`
-Usage:
+### Recycle Bin
 
-````php
-trans('misc.recycle_bin_of')
-````
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `recycle_bin`
+- Value: `recycle bin`
+- Usage: `misc.recycle_bin`
+
+```php
+trans('misc.recycle_bin');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
+### Recycle Bin Of
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `recycle_bin_of`
+- Value: `recycle bin of :things`
+- Usage: `misc.recycle_bin_of`
+
+```php
+trans('misc.recycle_bin_of', [
+    'things' => 'things',
+]);
+
+trans('misc.recycle_bin_of', [
+    'things' => e($things),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Archives
 
-Key: `archives`
-Value: `archives`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('misc.archives')
-````
+- Key: `archives`
+- Value: `archives`
+- Usage: `misc.archives`
 
-[Back to top ^](#glossary)
-### Archives_Of
+```php
+trans('misc.archives');
+```
 
-Key: `archives_of`
-Value: `archives of :things`
-Usage:
-
-````php
-trans('misc.archives_of')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Archives Of
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `archives_of`
+- Value: `archives of :things`
+- Usage: `misc.archives_of`
+
+```php
+trans('misc.archives_of', [
+    'things' => 'things',
+]);
+
+trans('misc.archives_of', [
+    'things' => e($things),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Required
 
-Key: `required`
-Value: `required`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('misc.required')
-````
+- Key: `required`
+- Value: `required`
+- Usage: `misc.required`
 
-[Back to top ^](#glossary)
-### Info_Required_Fields
+```php
+trans('misc.required');
+```
 
-Key: `info_required_fields`
-Value: `Fields marked with ":mark" are mandatory.`
-Usage:
-
-````php
-trans('misc.info_required_fields')
-````
+</details>
 
 [Back to top ^](#glossary)
-### Page_N
 
-Key: `page_n`
-Value: `Page :number`
-Usage:
+### Info Required Fields
 
-````php
-trans('misc.page_n')
-````
+<details>
+<summary>Click for details and usage</summary>
 
-[Back to top ^](#glossary)
-### Developed_By
+- Key: `info_required_fields`
+- Value: `Fields marked with ":mark" are mandatory.`
+- Usage: `misc.info_required_fields`
 
-Key: `developed_by`
-Value: `Developed by :author`
-Usage:
+```php
+trans('misc.info_required_fields', [
+    'mark' => 'mark',
+]);
 
-````php
-trans('misc.developed_by')
-````
+trans('misc.info_required_fields', [
+    'mark' => e($mark),
+]);
+```
 
-[Back to top ^](#glossary)
-### Under_Maintenance
-
-Key: `under_maintenance`
-Value: `under maintenance…`
-Usage:
-
-````php
-trans('misc.under_maintenance')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Page N
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `page_n`
+- Value: `Page :number`
+- Usage: `misc.page_n`
+
+```php
+trans('misc.page_n', [
+    'number' => 'number',
+]);
+
+trans('misc.page_n', [
+    'number' => e($number),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Developed By
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `developed_by`
+- Value: `Developed by :author`
+- Usage: `misc.developed_by`
+
+```php
+trans('misc.developed_by', [
+    'author' => 'author',
+]);
+
+trans('misc.developed_by', [
+    'author' => e($author),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Under Maintenance
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `under_maintenance`
+- Value: `under maintenance…`
+- Usage: `misc.under_maintenance`
+
+```php
+trans('misc.under_maintenance');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Quoted
 
-Key: `quoted`
-Value: `":string"`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('misc.quoted')
-````
+- Key: `quoted`
+- Value: `":string"`
+- Usage: `misc.quoted`
+
+```php
+trans('misc.quoted', [
+    'string' => 'string',
+]);
+
+trans('misc.quoted', [
+    'string' => e($string),
+]);
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ## Number
 
-### Decimals_Separator
+### Decimals Separator
 
-Key: `decimals_separator`
-Value: `.`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('number.decimals_separator')
-````
+- Key: `decimals_separator`
+- Value: `.`
+- Usage: `number.decimals_separator`
 
-[Back to top ^](#glossary)
-### Thousands_Separator
+```php
+trans('number.decimals_separator');
+```
 
-Key: `thousands_separator`
-Value: `,`
-Usage:
-
-````php
-trans('number.thousands_separator')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Thousands Separator
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `thousands_separator`
+- Value: `,`
+- Usage: `number.thousands_separator`
+
+```php
+trans('number.thousands_separator');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ## Placeholder
 
 ### Search
 
-Key: `search`
-Value: `Search...`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('placeholder.search')
-````
+- Key: `search`
+- Value: `Search...`
+- Usage: `placeholder.search`
+
+```php
+trans('placeholder.search');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ## Status
 
 ### Saved
 
-Key: `saved`
-Value: `saved`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('status.saved')
-````
+- Key: `saved`
+- Value: `saved`
+- Usage: `status.saved`
 
-[Back to top ^](#glossary)
-### Saved_Fem
+```php
+trans('status.saved');
+```
 
-Key: `saved_fem`
-Value: `saved`
-Usage:
-
-````php
-trans('status.saved_fem')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Saved Fem
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `saved_fem`
+- Value: `saved`
+- Usage: `status.saved_fem`
+
+```php
+trans('status.saved_fem');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Active
 
-Key: `active`
-Value: `active`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('status.active')
-````
+- Key: `active`
+- Value: `active`
+- Usage: `status.active`
 
-[Back to top ^](#glossary)
-### Active_Fem
+```php
+trans('status.active');
+```
 
-Key: `active_fem`
-Value: `active`
-Usage:
-
-````php
-trans('status.active_fem')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Active Fem
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `active_fem`
+- Value: `active`
+- Usage: `status.active_fem`
+
+```php
+trans('status.active_fem');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Inactive
 
-Key: `inactive`
-Value: `inactive`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('status.inactive')
-````
+- Key: `inactive`
+- Value: `inactive`
+- Usage: `status.inactive`
 
-[Back to top ^](#glossary)
-### Inactive_Fem
+```php
+trans('status.inactive');
+```
 
-Key: `inactive_fem`
-Value: `inactive`
-Usage:
-
-````php
-trans('status.inactive_fem')
-````
+</details>
 
 [Back to top ^](#glossary)
-### Active_Inactive
 
-Key: `active_inactive`
-Value: `active and inactive`
-Usage:
+### Inactive Fem
 
-````php
-trans('status.active_inactive')
-````
+<details>
+<summary>Click for details and usage</summary>
 
-[Back to top ^](#glossary)
-### Active_Inactive_Fem
+- Key: `inactive_fem`
+- Value: `inactive`
+- Usage: `status.inactive_fem`
 
-Key: `active_inactive_fem`
-Value: `active and inactive`
-Usage:
+```php
+trans('status.inactive_fem');
+```
 
-````php
-trans('status.active_inactive_fem')
-````
+</details>
 
 [Back to top ^](#glossary)
-### Only_Actives
 
-Key: `only_actives`
-Value: `only active`
-Usage:
+### Active Inactive
 
-````php
-trans('status.only_actives')
-````
+<details>
+<summary>Click for details and usage</summary>
 
-[Back to top ^](#glossary)
-### Only_Actives_Fem
+- Key: `active_inactive`
+- Value: `active and inactive`
+- Usage: `status.active_inactive`
 
-Key: `only_actives_fem`
-Value: `only active`
-Usage:
+```php
+trans('status.active_inactive');
+```
 
-````php
-trans('status.only_actives_fem')
-````
+</details>
 
 [Back to top ^](#glossary)
-### Only_Inactives
 
-Key: `only_inactives`
-Value: `only inactive`
-Usage:
+### Active Inactive Fem
 
-````php
-trans('status.only_inactives')
-````
+<details>
+<summary>Click for details and usage</summary>
 
-[Back to top ^](#glossary)
-### Only_Inactives_Fem
+- Key: `active_inactive_fem`
+- Value: `active and inactive`
+- Usage: `status.active_inactive_fem`
 
-Key: `only_inactives_fem`
-Value: `only inactive`
-Usage:
+```php
+trans('status.active_inactive_fem');
+```
 
-````php
-trans('status.only_inactives_fem')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Only Actives
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `only_actives`
+- Value: `only active`
+- Usage: `status.only_actives`
+
+```php
+trans('status.only_actives');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Only Actives Fem
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `only_actives_fem`
+- Value: `only active`
+- Usage: `status.only_actives_fem`
+
+```php
+trans('status.only_actives_fem');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Only Inactives
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `only_inactives`
+- Value: `only inactive`
+- Usage: `status.only_inactives`
+
+```php
+trans('status.only_inactives');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Only Inactives Fem
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `only_inactives_fem`
+- Value: `only inactive`
+- Usage: `status.only_inactives_fem`
+
+```php
+trans('status.only_inactives_fem');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Enabled
 
-Key: `enabled`
-Value: `enabled`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('status.enabled')
-````
+- Key: `enabled`
+- Value: `enabled`
+- Usage: `status.enabled`
 
-[Back to top ^](#glossary)
-### Enabled_Fem
+```php
+trans('status.enabled');
+```
 
-Key: `enabled_fem`
-Value: `enabled`
-Usage:
-
-````php
-trans('status.enabled_fem')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Enabled Fem
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `enabled_fem`
+- Value: `enabled`
+- Usage: `status.enabled_fem`
+
+```php
+trans('status.enabled_fem');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Disabled
 
-Key: `disabled`
-Value: `disabled`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('status.disabled')
-````
+- Key: `disabled`
+- Value: `disabled`
+- Usage: `status.disabled`
 
-[Back to top ^](#glossary)
-### Disabled_Fem
+```php
+trans('status.disabled');
+```
 
-Key: `disabled_fem`
-Value: `disabled`
-Usage:
-
-````php
-trans('status.disabled_fem')
-````
+</details>
 
 [Back to top ^](#glossary)
+
+### Disabled Fem
+
+<details>
+<summary>Click for details and usage</summary>
+
+- Key: `disabled_fem`
+- Value: `disabled`
+- Usage: `status.disabled_fem`
+
+```php
+trans('status.disabled_fem');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Online
 
-Key: `online`
-Value: `online`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('status.online')
-````
+- Key: `online`
+- Value: `online`
+- Usage: `status.online`
+
+```php
+trans('status.online');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Offline
 
-Key: `offline`
-Value: `offline`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('status.offline')
-````
+- Key: `offline`
+- Value: `offline`
+- Usage: `status.offline`
+
+```php
+trans('status.offline');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Info
 
-Key: `info`
-Value: `Information`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('status.info')
-````
+- Key: `info`
+- Value: `Information`
+- Usage: `status.info`
+
+```php
+trans('status.info');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Success
 
-Key: `success`
-Value: `Success`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('status.success')
-````
+- Key: `success`
+- Value: `Success`
+- Usage: `status.success`
+
+```php
+trans('status.success');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Warning
 
-Key: `warning`
-Value: `Warning`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('status.warning')
-````
+- Key: `warning`
+- Value: `Warning`
+- Usage: `status.warning`
+
+```php
+trans('status.warning');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Error
 
-Key: `error`
-Value: `Error`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('status.error')
-````
+- Key: `error`
+- Value: `Error`
+- Usage: `status.error`
+
+```php
+trans('status.error');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ## Unit
 
 ### B
 
-Key: `b`
-Value: `b`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.b')
-````
+- Key: `b`
+- Value: `b`
+- Usage: `unit.b`
+
+```php
+trans('unit.b');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Bit
 
-Key: `bit`
-Value: `bit`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.bit')
-````
+- Key: `bit`
+- Value: `bit`
+- Usage: `unit.bit`
+
+```php
+trans('unit.bit');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Bits
 
-Key: `bits`
-Value: `bits`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.bits')
-````
+- Key: `bits`
+- Value: `bits`
+- Usage: `unit.bits`
+
+```php
+trans('unit.bits');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### B
 
-Key: `B`
-Value: `B`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.B')
-````
+- Key: `B`
+- Value: `B`
+- Usage: `unit.B`
+
+```php
+trans('unit.B');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Byte
 
-Key: `byte`
-Value: `byte`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.byte')
-````
+- Key: `byte`
+- Value: `byte`
+- Usage: `unit.byte`
+
+```php
+trans('unit.byte');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Bytes
 
-Key: `bytes`
-Value: `bytes`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.bytes')
-````
+- Key: `bytes`
+- Value: `bytes`
+- Usage: `unit.bytes`
+
+```php
+trans('unit.bytes');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Kb
 
-Key: `kB`
-Value: `kB`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.kB')
-````
+- Key: `kB`
+- Value: `kB`
+- Usage: `unit.kB`
+
+```php
+trans('unit.kB');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Mb
 
-Key: `MB`
-Value: `MB`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.MB')
-````
+- Key: `MB`
+- Value: `MB`
+- Usage: `unit.MB`
+
+```php
+trans('unit.MB');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Gb
 
-Key: `GB`
-Value: `GB`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.GB')
-````
+- Key: `GB`
+- Value: `GB`
+- Usage: `unit.GB`
+
+```php
+trans('unit.GB');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Tb
 
-Key: `TB`
-Value: `TB`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.TB')
-````
+- Key: `TB`
+- Value: `TB`
+- Usage: `unit.TB`
+
+```php
+trans('unit.TB');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Millimeter
 
-Key: `millimeter`
-Value: `millimeter`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.millimeter')
-````
+- Key: `millimeter`
+- Value: `millimeter`
+- Usage: `unit.millimeter`
+
+```php
+trans('unit.millimeter');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Centimeter
 
-Key: `centimeter`
-Value: `centimeter`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.centimeter')
-````
+- Key: `centimeter`
+- Value: `centimeter`
+- Usage: `unit.centimeter`
+
+```php
+trans('unit.centimeter');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Meter
 
-Key: `meter`
-Value: `meter`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.meter')
-````
+- Key: `meter`
+- Value: `meter`
+- Usage: `unit.meter`
+
+```php
+trans('unit.meter');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Kilometer
 
-Key: `kilometer`
-Value: `kilometer`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.kilometer')
-````
+- Key: `kilometer`
+- Value: `kilometer`
+- Usage: `unit.kilometer`
+
+```php
+trans('unit.kilometer');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Gram
 
-Key: `gram`
-Value: `gram`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.gram')
-````
+- Key: `gram`
+- Value: `gram`
+- Usage: `unit.gram`
+
+```php
+trans('unit.gram');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Kilogram
 
-Key: `kilogram`
-Value: `kilogram`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.kilogram')
-````
+- Key: `kilogram`
+- Value: `kilogram`
+- Usage: `unit.kilogram`
+
+```php
+trans('unit.kilogram');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Milliliter
 
-Key: `milliliter`
-Value: `milliliter`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.milliliter')
-````
+- Key: `milliliter`
+- Value: `milliliter`
+- Usage: `unit.milliliter`
+
+```php
+trans('unit.milliliter');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Deciliter
 
-Key: `deciliter`
-Value: `deciliter`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.deciliter')
-````
+- Key: `deciliter`
+- Value: `deciliter`
+- Usage: `unit.deciliter`
+
+```php
+trans('unit.deciliter');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+
 ### Liter
 
-Key: `liter`
-Value: `liter`
-Usage:
+<details>
+<summary>Click for details and usage</summary>
 
-````php
-trans('unit.liter')
-````
+- Key: `liter`
+- Value: `liter`
+- Usage: `unit.liter`
+
+```php
+trans('unit.liter');
+```
+
+</details>
 
 [Back to top ^](#glossary)
+

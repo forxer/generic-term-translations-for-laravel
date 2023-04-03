@@ -48,9 +48,10 @@ trans('action.delete_something', [
     'something' => e($post->title),
 ]);
 ```
-### Masculine and feminine forms
 
-Some languages distinguish the masculine and feminine forms, for the same term the key for the feminine will then be suffixed by `_fem` ; for example:
+### Feminine and masculine gender
+
+Some languages distinguish between feminine and masculine genders, for the same term the feminine key will then be suffixed by `_fem`. For example:
 
 In English we use "all", while in French we use "toutes" in the feminine and "tous" in the masculine (see it on [Google Translate](https://translate.google.fr/?sl=en&tl=fr&text=all&op=translate)).
 

@@ -13,10 +13,9 @@ class GenerateGlossary extends Command
 
     protected $description = 'Generate glossary file with all generic term availables';
 
-    protected Generator $generator;
-
-    public function handdle(Generator $generator)
+    public function handle()
     {
-
+        $this->info('Generate gloassary of all generics terms');
+        (new Generator)->generateFile();
     }
 }

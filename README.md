@@ -25,7 +25,7 @@ You will find all the terms provided by this package in [the glossary](GLOSSARY.
 
 Terms are categorized into different sections by source files. For example there is an `action.php` source file that defines `the add_something` key, you can use it like this:
 
-```
+```php
 // "en" locale
 trans('action.add_something', [
     'something' => 'a post',
@@ -43,8 +43,25 @@ trans('action.add_something', [
 
 Be careful to escape the data that you do not control:
 
-```
+```php
 trans('action.delete_something', [
     'something' => e($post->title),
 ]);
+```
+### Masculine and feminine forms
+
+Some languages distinguish the masculine and feminine forms, for the same term the key for the feminine will then be suffixed by `_fem` ; for example:
+
+In English we use "all", while in French we use "toutes" in the feminine and "tous" in the masculine (see it on [Google Translate](https://translate.google.fr/?sl=en&tl=fr&text=all&op=translate)).
+
+```php
+// "en" locale
+trans('misc.all'); // return: "all"
+
+trans('misc.all_fem'); // return: "all"
+
+// "fr" locale
+trans('misc.all'); // return: "tous"
+
+trans('misc.all_fem'); // return: "toutes"
 ```

@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+1.1.0 (2023-04-03)
+------------------
+
+- Added GLOSSARY.md file
+- Added GLOSSARY.md file generator
+
+
 1.0.3 (2023-04-01)
 ------------------
 

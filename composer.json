@@ -1,6 +1,7 @@
 {
     "name": "forxer/generic-term-translations-for-laravel",
     "description": "A plugin for Laravel Lang that provides generic term translations for Laravel.",
+    "homepage": "https://github.com/forxer/generic-term-translations-for-laravel",
     "license": "MIT",
     "keywords": [
         "laravel",
@@ -9,8 +10,7 @@
     ],
     "authors": [
         {
-            "name": "Vincent Garnier",
-            "homepage": "https://github.com/forxer/generic-term-translations-for-laravel"
+            "name": "Vincent Garnier"
         }
     ],
     "support": {
@@ -23,6 +23,8 @@
         "laravel-lang/publisher": "^14.0"
     },
     "require-dev": {
+        "illuminate/filesystem": "^8.0 || ^9.0 || ^10.0",
+        "illuminate/support": "^8.0 || ^9.0 || ^10.0",
         "laravel-lang/status-generator": "^1.13",
         "phpunit/phpunit": "^9.6",
         "symfony/var-dumper": "^6.0"

@@ -63,8 +63,6 @@ class Generator
         $summaryTerms = [];
 
         foreach ($termGroups as $terms) {
-            $position = 0;
-
             foreach ($terms as $key => $value) {
                 $keyString = Str::of($key);
                 $termTitle = $keyString->title()->replace('_', ' ')->toString();
@@ -74,13 +72,13 @@ class Generator
                 $this->processTerm($fileBasename, $termTitle, $key, $value);
             }
 
-            $this->addToSummary($summaryTerms, $position++);
+            $this->addToSummary($summaryTerms);
         }
 
         $this->summary('', 2);
     }
 
-    private function addToSummary(array &$summaryTerms, int $position)
+    private function addToSummary(array &$summaryTerms,)
     {
         for ($i=0; $i < static::NUMBER_TERMS_PER_SUMMARY_LINE; $i++) {
             if (empty($summaryTerms[$i])) {

@@ -3,6 +3,8 @@ Generic term translations for Laravel
 
 A plugin for [Laravel Lang](https://laravel-lang.com/) that provides generic term translations for Laravel project.
 
+Consult [the glossary](GLOSSARY.md) to see all the terms available for translation.
+
 Installation
 ------------
 

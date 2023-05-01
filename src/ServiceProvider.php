@@ -16,11 +16,4 @@ class ServiceProvider extends BaseServiceProvider
             $this->app->register(Plugin::class);
         }
     }
-
-    public function boot()
-    {
-        if ($this->app->runningInConsole()) {
-            $this->commands(GenerateGlossary::class);
-        }
-    }
 }

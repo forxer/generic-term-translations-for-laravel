@@ -1,6 +1,14 @@
 CHANGELOG
 =========
 
+1.2.0 (2023-05-01)
+------------------
+
+- Moved glossary generator from project src to simple executable generate-glossary file
+- Removed useless command
+- Update misc.info_required_fields strings
+
+
 1.1.0 (2023-04-03)
 ------------------
 

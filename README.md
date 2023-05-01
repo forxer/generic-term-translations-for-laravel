@@ -3,6 +3,8 @@ Generic term translations for Laravel
 
 A plugin for [Laravel Lang](https://laravel-lang.com/) that provides generic term translations for Laravel project.
 
+Consult [the glossary](GLOSSARY.md) to see all the terms available for translation.
+
 Installation
 ------------
 
@@ -66,3 +68,13 @@ trans('misc.all'); // return: "tous"
 
 trans('misc.all_fem'); // return: "toutes"
 ```
+
+Development steps
+-----------------
+
+1. From the package directory, run `php composer update`
+2. Update the sources as needed in `src/source` files
+3. Run the console command `php vendor/bin/lang sync`
+4. Translate modifications in `src/locales/{locale}/php.json`
+5. Run `php generate-glossary`
+6. Commit changes

@@ -65,7 +65,7 @@
     "inactive": "inactive",
     "inactive_fem": "inactive",
     "info": "Information",
-    "info_required_fields": "Fields marked with \":mark\" are mandatory.",
+    "info_required_fields": "Mandatory fields are indicated by:",
     "kB": "kB",
     "kilogram": "kilogram",
     "kilometer": "kilometer",

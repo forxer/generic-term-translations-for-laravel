@@ -1650,17 +1650,11 @@ trans('misc.required');
 <summary>Click for details and usage of Info Required Fields</summary>
 
 - Key: `'info_required_fields'`
-- Value: `'Fields marked with ":mark" are mandatory.'`
+- Value: `'Mandatory fields are indicated by:'`
 - Usage: `'misc.info_required_fields'`
 
 ```php
-trans('misc.info_required_fields', [
-    'mark' => 'mark',
-]);
-
-trans('misc.info_required_fields', [
-    'mark' => e($mark),
-]);
+trans('misc.info_required_fields');
 ```
 
 </details>

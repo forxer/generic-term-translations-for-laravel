@@ -25,7 +25,7 @@ return [
     'archives_of' => 'archives of :things',
 
     'required' => 'required',
-    'info_required_fields' => 'Fields marked with ":mark" are mandatory.',
+    'info_required_fields' => 'Mandatory fields are indicated by:',
 
     'page_n' => 'Page :number',
 

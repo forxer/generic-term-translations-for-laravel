@@ -101,7 +101,7 @@
     "refresh_something": "rafraîchir :something",
     "reload": "recharger",
     "reload_something": "recharger :something",
-    "required": "requis",
+    "required_field": "champs requis",
     "restore": "restaurer",
     "restore_something": "restaurer :something",
     "save": "enregistrer",

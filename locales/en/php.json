@@ -101,7 +101,7 @@
     "refresh_something": "refresh :something",
     "reload": "reload",
     "reload_something": "reload :something",
-    "required": "required",
+    "required_field": "required field",
     "restore": "restore",
     "restore_something": "restore :something",
     "save": "save",

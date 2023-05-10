@@ -24,7 +24,8 @@ return [
     'archives' => 'archives',
     'archives_of' => 'archives of :things',
 
-    'required' => 'required',
+    'required_field' => 'required field',
+
     'info_required_fields' => 'Mandatory fields are indicated by:',
 
     'page_n' => 'Page :number',

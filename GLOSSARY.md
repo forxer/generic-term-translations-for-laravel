@@ -54,7 +54,7 @@
 |[Yes](#yes)|[No](#no)|[All](#all)|[All Fem](#all-fem)|[Previous](#previous)|
 |[Previous Fem](#previous-fem)|[Next](#next)|[Next Fem](#next-fem)|[Or](#or)|[Other](#other)|
 |[With](#with)|[Without](#without)|[Recycle Bin](#recycle-bin)|[Recycle Bin Of](#recycle-bin-of)|[Archives](#archives)|
-|[Archives Of](#archives-of)|[Required](#required)|[Info Required Fields](#info-required-fields)|[Page N](#page-n)|[Developed By](#developed-by)|
+|[Archives Of](#archives-of)|[Required Field](#required-field)|[Info Required Fields](#info-required-fields)|[Page N](#page-n)|[Developed By](#developed-by)|
 |[Under Maintenance](#under-maintenance)|[Quoted](#quoted)| | | |
 
 
@@ -1627,17 +1627,17 @@ trans('misc.archives_of', [
 
 [Back to top ^](#glossary)
 
-### Required
+### Required Field
 
 <details>
-<summary>Click for details and usage of Required</summary>
+<summary>Click for details and usage of Required Field</summary>
 
-- Key: `'required'`
-- Value: `'required'`
-- Usage: `'misc.required'`
+- Key: `'required_field'`
+- Value: `'required field'`
+- Usage: `'misc.required_field'`
 
 ```php
-trans('misc.required');
+trans('misc.required_field');
 ```
 
 </details>

@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+1.2.1 (2023-05-10)
+------------------
+
+- Change key in misc, replace "required" by "required_field" ; see https://github.com/Laravel-Lang/publisher/issues/329
+
+
 1.2.0 (2023-05-01)
 ------------------
 

@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+1.3.0 (2023-10-26)
+------------------
+
+- Removed support for Laravel 9 and 8 versions for development
+
+
 1.2.1 (2023-05-10)
 ------------------
 

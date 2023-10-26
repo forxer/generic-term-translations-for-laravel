@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace GenericTermTranslations;
 
-use GenericTermTranslations\Console\GenerateGlossary;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use LaravelLang\Publisher\Plugins\Provider;
 

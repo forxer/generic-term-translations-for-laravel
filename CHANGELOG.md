@@ -1,10 +1,17 @@
 CHANGELOG
 =========
 
+1.3.0 (2023-10-26)
+------------------
+
+- Removed support for Laravel 9 and 8 versions for development
+
+
 1.2.1 (2023-05-10)
 ------------------
 
 - Change key in misc, replace "required" by "required_field" ; see https://github.com/Laravel-Lang/publisher/issues/329
+
 
 1.2.0 (2023-05-01)
 ------------------

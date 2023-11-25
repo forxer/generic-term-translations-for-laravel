@@ -20,12 +20,12 @@
     "require": {
         "php": "^8.1",
         "ext-json": "*",
-        "laravel-lang/publisher": "^14.0"
+        "laravel-lang/publisher": "^14.1 || ^15.0"
     },
     "require-dev": {
         "illuminate/filesystem": "^10.0 || ^11.0",
         "illuminate/support": "^10.0 || ^11.0",
-        "laravel-lang/status-generator": "^1.19",
+        "laravel-lang/status-generator": "^1.19 || ^2.0",
         "phpunit/phpunit": "^10.0",
         "symfony/var-dumper": "^6.0"
     },

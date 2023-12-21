@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+1.5.0 (2023-12-21)
+------------------
+
+- Added support for `laravel-lang/publisher` version 16
+
+
 1.4.0 (2023-11-25)
 ------------------
 

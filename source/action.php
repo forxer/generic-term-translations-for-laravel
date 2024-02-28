@@ -13,6 +13,11 @@ return [
 
     'save' => 'save',
     'save_something' => 'save :something',
+
+    'save_and_close' => 'Save & Close',
+    'save_and_return' => 'Save & Return',
+    'save_and_new' => 'Save & New',
+
     'send' => 'send',
     'send_something' => 'send :something',
 
@@ -52,4 +57,7 @@ return [
 
     'up' => 'up',
     'down' => 'down',
+
+    'login' => 'login',
+    'logout' => 'logout',
 ];

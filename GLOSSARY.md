@@ -7,12 +7,13 @@
 | :-----: | :-----: | :-----: | :-----: | :-----: |
 |[Add](#add)|[Add Something](#add-something)|[Edit](#edit)|[Edit Something](#edit-something)|[Show](#show)|
 |[Show Something](#show-something)|[Preview](#preview)|[Preview Something](#preview-something)|[Save](#save)|[Save Something](#save-something)|
-|[Send](#send)|[Send Something](#send-something)|[Enable](#enable)|[Enable Something](#enable-something)|[Disable](#disable)|
-|[Disable Something](#disable-something)|[Archive](#archive)|[Archive Something](#archive-something)|[Unarchive](#unarchive)|[Unarchive Something](#unarchive-something)|
-|[Refresh](#refresh)|[Refresh Something](#refresh-something)|[Reload](#reload)|[Reload Something](#reload-something)|[Restore](#restore)|
-|[Restore Something](#restore-something)|[Delete](#delete)|[Delete Something](#delete-something)|[Cancel](#cancel)|[Cancel Something](#cancel-something)|
-|[Duplicate](#duplicate)|[Duplicate Something](#duplicate-something)|[Close](#close)|[Close Something](#close-something)|[Search](#search)|
-|[Browse](#browse)|[Up](#up)|[Down](#down)| | |
+|[Save And Close](#save-and-close)|[Save And Return](#save-and-return)|[Save And New](#save-and-new)|[Send](#send)|[Send Something](#send-something)|
+|[Enable](#enable)|[Enable Something](#enable-something)|[Disable](#disable)|[Disable Something](#disable-something)|[Archive](#archive)|
+|[Archive Something](#archive-something)|[Unarchive](#unarchive)|[Unarchive Something](#unarchive-something)|[Refresh](#refresh)|[Refresh Something](#refresh-something)|
+|[Reload](#reload)|[Reload Something](#reload-something)|[Restore](#restore)|[Restore Something](#restore-something)|[Delete](#delete)|
+|[Delete Something](#delete-something)|[Cancel](#cancel)|[Cancel Something](#cancel-something)|[Duplicate](#duplicate)|[Duplicate Something](#duplicate-something)|
+|[Close](#close)|[Close Something](#close-something)|[Search](#search)|[Browse](#browse)|[Up](#up)|
+|[Down](#down)|[Login](#login)|[Logout](#logout)| | |
 
 
 [**Back**](#back)
@@ -291,6 +292,57 @@ trans('action.save_something', [
 trans('action.save_something', [
     'something' => e($something),
 ]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Save And Close
+
+<details>
+<summary>Click for details and usage of Save And Close</summary>
+
+- Key: `'save_and_close'`
+- Value: `'Save & Close'`
+- Usage: `'action.save_and_close'`
+
+```php
+trans('action.save_and_close');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Save And Return
+
+<details>
+<summary>Click for details and usage of Save And Return</summary>
+
+- Key: `'save_and_return'`
+- Value: `'Save & Return'`
+- Usage: `'action.save_and_return'`
+
+```php
+trans('action.save_and_return');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Save And New
+
+<details>
+<summary>Click for details and usage of Save And New</summary>
+
+- Key: `'save_and_new'`
+- Value: `'Save & New'`
+- Usage: `'action.save_and_new'`
+
+```php
+trans('action.save_and_new');
 ```
 
 </details>
@@ -839,6 +891,40 @@ trans('action.up');
 
 ```php
 trans('action.down');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Login
+
+<details>
+<summary>Click for details and usage of Login</summary>
+
+- Key: `'login'`
+- Value: `'login'`
+- Usage: `'action.login'`
+
+```php
+trans('action.login');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Logout
+
+<details>
+<summary>Click for details and usage of Logout</summary>
+
+- Key: `'logout'`
+- Value: `'logout'`
+- Usage: `'action.logout'`
+
+```php
+trans('action.logout');
 ```
 
 </details>

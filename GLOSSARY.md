@@ -55,8 +55,8 @@
 |[Yes](#yes)|[No](#no)|[All](#all)|[All Fem](#all-fem)|[Previous](#previous)|
 |[Previous Fem](#previous-fem)|[Next](#next)|[Next Fem](#next-fem)|[Or](#or)|[Other](#other)|
 |[With](#with)|[Without](#without)|[Recycle Bin](#recycle-bin)|[Recycle Bin Of](#recycle-bin-of)|[Archives](#archives)|
-|[Archives Of](#archives-of)|[Required Field](#required-field)|[Info Required Fields](#info-required-fields)|[Page N](#page-n)|[Developed By](#developed-by)|
-|[Under Maintenance](#under-maintenance)|[Quoted](#quoted)| | | |
+|[Archives Of](#archives-of)|[Required Field](#required-field)|[Info Required Fields](#info-required-fields)|[Unknown](#unknown)|[Unknown Fem](#unknown-fem)|
+|[Page N](#page-n)|[Developed By](#developed-by)|[Under Maintenance](#under-maintenance)|[Quoted](#quoted)| |
 
 
 [**Number**](#number)
@@ -1741,6 +1741,40 @@ trans('misc.required_field');
 
 ```php
 trans('misc.info_required_fields');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Unknown
+
+<details>
+<summary>Click for details and usage of Unknown</summary>
+
+- Key: `'unknown'`
+- Value: `'unknown'`
+- Usage: `'misc.unknown'`
+
+```php
+trans('misc.unknown');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Unknown Fem
+
+<details>
+<summary>Click for details and usage of Unknown Fem</summary>
+
+- Key: `'unknown_fem'`
+- Value: `'unknown'`
+- Usage: `'misc.unknown_fem'`
+
+```php
+trans('misc.unknown_fem');
 ```
 
 </details>

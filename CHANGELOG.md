@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+1.7.0 (2024-06-02)
+------------------
+
+- Added `misc.unknown` and `misc.unknown_fem` terms
+
+
 1.6.0 (2024-02-28)
 ------------------
 

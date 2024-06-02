@@ -27,6 +27,9 @@ return [
     'required_field' => 'required field',
     'info_required_fields' => 'Mandatory fields are indicated by:',
 
+    'unknown' => 'unknown',
+    'unknown_fem' => 'unknown',
+
     'page_n' => 'Page :number',
 
     'developed_by' => 'Developed by :author',

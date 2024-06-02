@@ -23,11 +23,11 @@
         "laravel-lang/publisher": "^14.1 || ^15.0 || ^16.0"
     },
     "require-dev": {
-        "illuminate/filesystem": "^10.46 || ^11.0",
-        "illuminate/support": "^10.46 || ^11.0",
-        "laravel-lang/status-generator": "^1.19 || ^2.7.1",
-        "phpunit/phpunit": "^10.5.11",
-        "symfony/var-dumper": "^6.4.4"
+        "illuminate/filesystem": "^10.46 || ^11.9.2",
+        "illuminate/support": "^10.46 || ^11.9.2",
+        "laravel-lang/status-generator": "^1.19 || ^2.11.2",
+        "phpunit/phpunit": "^10.5.20",
+        "symfony/var-dumper": "^6.4.7"
     },
     "autoload": {
         "psr-4": {

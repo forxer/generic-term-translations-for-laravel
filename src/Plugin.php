@@ -11,7 +11,7 @@ class Plugin extends Provider
 {
     protected ?string $package_name = 'forxer/generic-term-translations-for-laravel';
 
-    protected string $base_path = __DIR__ . '/../';
+    protected string $base_path = __DIR__.'/../';
 
     protected array $plugins = [
         Main::class,

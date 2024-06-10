@@ -13,6 +13,7 @@ class Main extends Plugin
         return [
             'action.php' => '{locale}/action.php',
             'back.php' => '{locale}/back.php',
+            'civilities.php' => '{locale}/civilities.php',
             'email.php' => '{locale}/email.php',
             'env.php' => '{locale}/env.php',
             'errors.php' => '{locale}/errors.php',

@@ -24,6 +24,13 @@
 |[Somethings](#somethings)| | | | |
 
 
+[**Civilities**](#civilities)
+
+|         |         |         |         |         |
+| :-----: | :-----: | :-----: | :-----: | :-----: |
+|[Mrs](#mrs)|[Mr](#mr)|[Mrs Abbr](#mrs-abbr)|[Mr Abbr](#mr-abbr)| |
+
+
 [**Email**](#email)
 
 |         |         |         |         |         |
@@ -1041,6 +1048,76 @@ trans('back.somethings', [
 trans('back.somethings', [
     'somethings' => e($somethings),
 ]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+## Civilities
+
+### Mrs
+
+<details>
+<summary>Click for details and usage of Mrs</summary>
+
+- Key: `'mrs'`
+- Value: `'Madame'`
+- Usage: `'civilities.mrs'`
+
+```php
+trans('civilities.mrs');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Mr
+
+<details>
+<summary>Click for details and usage of Mr</summary>
+
+- Key: `'mr'`
+- Value: `'Mister'`
+- Usage: `'civilities.mr'`
+
+```php
+trans('civilities.mr');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Mrs Abbr
+
+<details>
+<summary>Click for details and usage of Mrs Abbr</summary>
+
+- Key: `'mrs_abbr'`
+- Value: `'Mrs'`
+- Usage: `'civilities.mrs_abbr'`
+
+```php
+trans('civilities.mrs_abbr');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Mr Abbr
+
+<details>
+<summary>Click for details and usage of Mr Abbr</summary>
+
+- Key: `'mr_abbr'`
+- Value: `'Mr.'`
+- Usage: `'civilities.mr_abbr'`
+
+```php
+trans('civilities.mr_abbr');
 ```
 
 </details>

@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+1.8.1 (2024-08-12)
+------------------
+
+- Use UTF-8 No-Break Space character instead of HTML entities in FR
+
+
 1.8.0 (2024-06-10)
 ------------------
 

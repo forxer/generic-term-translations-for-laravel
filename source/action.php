@@ -18,9 +18,6 @@ return [
     'save_and_return' => 'Save & Return',
     'save_and_new' => 'Save & New',
 
-    'send' => 'send',
-    'send_something' => 'send :something',
-
     'enable' => 'enable',
     'enable_something' => 'enable :something',
     'disable' => 'disable',
@@ -51,7 +48,22 @@ return [
     'close' => 'close',
     'close_something' => 'close :something',
 
+    'see_website' => 'see website',
+    'see_website_addresss' => 'see website :addresss',
+
+    'send' => 'send',
+    'send_something' => 'send :something',
+
+    'send_email' => 'send an email',
+    'send_email_to_address' => 'send an email to :address',
+
+    'call_phone' => 'call on phone',
+    'call_phone_number' => 'call on phone the :phone-number',
+
     'search' => 'search',
+
+    'copy' => 'copy',
+    'copy_something' => 'copy :something',
 
     'browse' => 'browse',
 

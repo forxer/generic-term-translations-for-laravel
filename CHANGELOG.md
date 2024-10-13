@@ -1,6 +1,20 @@
 CHANGELOG
 =========
 
+1.9.0 (2024-10-13)
+------------------
+
+- Added new terms:
+    - `action.call_phone`
+    - `action.call_phone_number`
+    - `action.copy`
+    - `action.copy_something`
+    - `action.see_website`
+    - `action.see_website_addresss`
+    - `action.send_email`
+    - `action.send_email_to_address`
+
+
 1.8.1 (2024-08-12)
 ------------------
 

@@ -7,13 +7,15 @@
 | :-----: | :-----: | :-----: | :-----: | :-----: |
 |[Add](#add)|[Add Something](#add-something)|[Edit](#edit)|[Edit Something](#edit-something)|[Show](#show)|
 |[Show Something](#show-something)|[Preview](#preview)|[Preview Something](#preview-something)|[Save](#save)|[Save Something](#save-something)|
-|[Save And Close](#save-and-close)|[Save And Return](#save-and-return)|[Save And New](#save-and-new)|[Send](#send)|[Send Something](#send-something)|
-|[Enable](#enable)|[Enable Something](#enable-something)|[Disable](#disable)|[Disable Something](#disable-something)|[Archive](#archive)|
-|[Archive Something](#archive-something)|[Unarchive](#unarchive)|[Unarchive Something](#unarchive-something)|[Refresh](#refresh)|[Refresh Something](#refresh-something)|
-|[Reload](#reload)|[Reload Something](#reload-something)|[Restore](#restore)|[Restore Something](#restore-something)|[Delete](#delete)|
-|[Delete Something](#delete-something)|[Cancel](#cancel)|[Cancel Something](#cancel-something)|[Duplicate](#duplicate)|[Duplicate Something](#duplicate-something)|
-|[Close](#close)|[Close Something](#close-something)|[Search](#search)|[Browse](#browse)|[Up](#up)|
-|[Down](#down)|[Login](#login)|[Logout](#logout)| | |
+|[Save And Close](#save-and-close)|[Save And Return](#save-and-return)|[Save And New](#save-and-new)|[Enable](#enable)|[Enable Something](#enable-something)|
+|[Disable](#disable)|[Disable Something](#disable-something)|[Archive](#archive)|[Archive Something](#archive-something)|[Unarchive](#unarchive)|
+|[Unarchive Something](#unarchive-something)|[Refresh](#refresh)|[Refresh Something](#refresh-something)|[Reload](#reload)|[Reload Something](#reload-something)|
+|[Restore](#restore)|[Restore Something](#restore-something)|[Delete](#delete)|[Delete Something](#delete-something)|[Cancel](#cancel)|
+|[Cancel Something](#cancel-something)|[Duplicate](#duplicate)|[Duplicate Something](#duplicate-something)|[Close](#close)|[Close Something](#close-something)|
+|[See Website](#see-website)|[See Website Addresss](#see-website-addresss)|[Send](#send)|[Send Something](#send-something)|[Send Email](#send-email)|
+|[Send Email To Address](#send-email-to-address)|[Call Phone](#call-phone)|[Call Phone Number](#call-phone-number)|[Search](#search)|[Copy](#copy)|
+|[Copy Something](#copy-something)|[Browse](#browse)|[Up](#up)|[Down](#down)|[Login](#login)|
+|[Logout](#logout)| | | | |
 
 
 [**Back**](#back)
@@ -350,46 +352,6 @@ trans('action.save_and_return');
 
 ```php
 trans('action.save_and_new');
-```
-
-</details>
-
-[Back to top ^](#glossary)
-
-### Send
-
-<details>
-<summary>Click for details and usage of Send</summary>
-
-- Key: `'send'`
-- Value: `'send'`
-- Usage: `'action.send'`
-
-```php
-trans('action.send');
-```
-
-</details>
-
-[Back to top ^](#glossary)
-
-### Send Something
-
-<details>
-<summary>Click for details and usage of Send Something</summary>
-
-- Key: `'send_something'`
-- Value: `'send :something'`
-- Usage: `'action.send_something'`
-
-```php
-trans('action.send_something', [
-    'something' => 'something',
-]);
-
-trans('action.send_something', [
-    'something' => e($something),
-]);
 ```
 
 </details>
@@ -836,6 +798,166 @@ trans('action.close_something', [
 
 [Back to top ^](#glossary)
 
+### See Website
+
+<details>
+<summary>Click for details and usage of See Website</summary>
+
+- Key: `'see_website'`
+- Value: `'see website'`
+- Usage: `'action.see_website'`
+
+```php
+trans('action.see_website');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### See Website Addresss
+
+<details>
+<summary>Click for details and usage of See Website Addresss</summary>
+
+- Key: `'see_website_addresss'`
+- Value: `'see website :addresss'`
+- Usage: `'action.see_website_addresss'`
+
+```php
+trans('action.see_website_addresss', [
+    'addresss' => 'addresss',
+]);
+
+trans('action.see_website_addresss', [
+    'addresss' => e($addresss),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Send
+
+<details>
+<summary>Click for details and usage of Send</summary>
+
+- Key: `'send'`
+- Value: `'send'`
+- Usage: `'action.send'`
+
+```php
+trans('action.send');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Send Something
+
+<details>
+<summary>Click for details and usage of Send Something</summary>
+
+- Key: `'send_something'`
+- Value: `'send :something'`
+- Usage: `'action.send_something'`
+
+```php
+trans('action.send_something', [
+    'something' => 'something',
+]);
+
+trans('action.send_something', [
+    'something' => e($something),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Send Email
+
+<details>
+<summary>Click for details and usage of Send Email</summary>
+
+- Key: `'send_email'`
+- Value: `'send an email'`
+- Usage: `'action.send_email'`
+
+```php
+trans('action.send_email');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Send Email To Address
+
+<details>
+<summary>Click for details and usage of Send Email To Address</summary>
+
+- Key: `'send_email_to_address'`
+- Value: `'send an email to :address'`
+- Usage: `'action.send_email_to_address'`
+
+```php
+trans('action.send_email_to_address', [
+    'address' => 'address',
+]);
+
+trans('action.send_email_to_address', [
+    'address' => e($address),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Call Phone
+
+<details>
+<summary>Click for details and usage of Call Phone</summary>
+
+- Key: `'call_phone'`
+- Value: `'call on phone'`
+- Usage: `'action.call_phone'`
+
+```php
+trans('action.call_phone');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Call Phone Number
+
+<details>
+<summary>Click for details and usage of Call Phone Number</summary>
+
+- Key: `'call_phone_number'`
+- Value: `'call on phone the :phone-number'`
+- Usage: `'action.call_phone_number'`
+
+```php
+trans('action.call_phone_number', [
+    'phone-number' => 'phone-number',
+]);
+
+trans('action.call_phone_number', [
+    'phone-number' => e($phone-number),
+]);
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### Search
 
 <details>
@@ -847,6 +969,46 @@ trans('action.close_something', [
 
 ```php
 trans('action.search');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Copy
+
+<details>
+<summary>Click for details and usage of Copy</summary>
+
+- Key: `'copy'`
+- Value: `'copy'`
+- Usage: `'action.copy'`
+
+```php
+trans('action.copy');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Copy Something
+
+<details>
+<summary>Click for details and usage of Copy Something</summary>
+
+- Key: `'copy_something'`
+- Value: `'copy :something'`
+- Usage: `'action.copy_something'`
+
+```php
+trans('action.copy_something', [
+    'something' => 'something',
+]);
+
+trans('action.copy_something', [
+    'something' => e($something),
+]);
 ```
 
 </details>

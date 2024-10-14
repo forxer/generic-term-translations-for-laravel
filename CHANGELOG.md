@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+1.9.1 (2024-10-14)
+------------------
+
+- Missing translation 'fr' of `action.send_email_to_address`
+
+
 1.9.0 (2024-10-13)
 ------------------
 

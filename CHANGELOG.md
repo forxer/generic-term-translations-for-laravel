@@ -1,6 +1,16 @@
 CHANGELOG
 =========
 
+1.10.0 (2026-03-20)
+-------------------
+
+- Added new terms:
+    - `errors.402_title`
+    - `errors.402_message`
+    - `errors.429_title`
+    - `errors.429_message`
+
+
 1.9.1 (2024-10-14)
 ------------------
 

@@ -4,6 +4,9 @@ return [
     '401_title' => '401 error - Unauthorized',
     '401_message' => 'Sorry but an authentication is required to view this document.',
 
+    '402_message' => 'Payment is required to access this content.',
+    '402_title' => '402 error - Payment Required',
+
     '403_title' => '403 error - Acces denied',
     '403_message' => 'Sorry, but you do not have permission to view this document.',
 
@@ -12,6 +15,9 @@ return [
 
     '419_title' => '419 error - Your session has expired',
     '419_message' => 'Sorry, please login again.',
+
+    '429_message' => 'Too many requests. Please try again in a moment.',
+    '429_title' => '429 error - Too Many Requests',
 
     '500_title' => '500 error - Internal server error',
     '500_message' => 'The HTTP server encountered an unexpected condition that prevented it from processing the request.',

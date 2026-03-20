@@ -52,9 +52,10 @@
 
 |         |         |         |         |         |
 | :-----: | :-----: | :-----: | :-----: | :-----: |
-|[401 Title](#401-title)|[401 Message](#401-message)|[403 Title](#403-title)|[403 Message](#403-message)|[404 Title](#404-title)|
-|[404 Message](#404-message)|[419 Title](#419-title)|[419 Message](#419-message)|[500 Title](#500-title)|[500 Message](#500-message)|
-|[503 Title](#503-title)|[503 Message](#503-message)| | | |
+|[401 Title](#401-title)|[401 Message](#401-message)|[402 Message](#402-message)|[402 Title](#402-title)|[403 Title](#403-title)|
+|[403 Message](#403-message)|[404 Title](#404-title)|[404 Message](#404-message)|[419 Title](#419-title)|[419 Message](#419-message)|
+|[429 Message](#429-message)|[429 Title](#429-title)|[500 Title](#500-title)|[500 Message](#500-message)|[503 Title](#503-title)|
+|[503 Message](#503-message)| | | | |
 
 
 [**Misc**](#misc)
@@ -1496,6 +1497,40 @@ trans('errors.401_message');
 
 [Back to top ^](#glossary)
 
+### 402 Message
+
+<details>
+<summary>Click for details and usage of 402 Message</summary>
+
+- Key: `'402_message'`
+- Value: `'Payment is required to access this content.'`
+- Usage: `'errors.402_message'`
+
+```php
+trans('errors.402_message');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### 402 Title
+
+<details>
+<summary>Click for details and usage of 402 Title</summary>
+
+- Key: `'402_title'`
+- Value: `'402 error - Payment Required'`
+- Usage: `'errors.402_title'`
+
+```php
+trans('errors.402_title');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
 ### 403 Title
 
 <details>
@@ -1592,6 +1627,40 @@ trans('errors.419_title');
 
 ```php
 trans('errors.419_message');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### 429 Message
+
+<details>
+<summary>Click for details and usage of 429 Message</summary>
+
+- Key: `'429_message'`
+- Value: `'Too many requests. Please try again in a moment.'`
+- Usage: `'errors.429_message'`
+
+```php
+trans('errors.429_message');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### 429 Title
+
+<details>
+<summary>Click for details and usage of 429 Title</summary>
+
+- Key: `'429_title'`
+- Value: `'429 error - Too Many Requests'`
+- Usage: `'errors.429_title'`
+
+```php
+trans('errors.429_title');
 ```
 
 </details>

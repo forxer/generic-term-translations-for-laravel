@@ -1,75 +1,75 @@
 <?php
 
 return [
-    'add' => 'add',
-    'add_something' => 'add :something',
-    'edit' => 'edit',
-    'edit_something' => 'edit :something',
+    'add' => 'Add',
+    'add_something' => 'Add :something',
+    'edit' => 'Edit',
+    'edit_something' => 'Edit :something',
 
-    'show' => 'show',
-    'show_something' => 'show :something',
-    'preview' => 'preview',
-    'preview_something' => 'preview :something',
+    'show' => 'Show',
+    'show_something' => 'Show :something',
+    'preview' => 'Preview',
+    'preview_something' => 'Preview :something',
 
-    'save' => 'save',
-    'save_something' => 'save :something',
+    'save' => 'Save',
+    'save_something' => 'Save :something',
 
     'save_and_close' => 'Save & Close',
     'save_and_return' => 'Save & Return',
     'save_and_new' => 'Save & New',
 
-    'enable' => 'enable',
-    'enable_something' => 'enable :something',
-    'disable' => 'disable',
-    'disable_something' => 'disable :something',
+    'enable' => 'Enable',
+    'enable_something' => 'Enable :something',
+    'disable' => 'Disable',
+    'disable_something' => 'Disable :something',
 
-    'archive' => 'archive',
-    'archive_something' => 'archive :something',
-    'unarchive' => 'unarchive',
-    'unarchive_something' => 'unarchive :something',
+    'archive' => 'Archive',
+    'archive_something' => 'Archive :something',
+    'unarchive' => 'Unarchive',
+    'unarchive_something' => 'Unarchive :something',
 
-    'refresh' => 'refresh',
-    'refresh_something' => 'refresh :something',
-    'reload' => 'reload',
-    'reload_something' => 'reload :something',
+    'refresh' => 'Refresh',
+    'refresh_something' => 'Refresh :something',
+    'reload' => 'Reload',
+    'reload_something' => 'Reload :something',
 
-    'restore' => 'restore',
-    'restore_something' => 'restore :something',
+    'restore' => 'Restore',
+    'restore_something' => 'Restore :something',
 
-    'delete' => 'delete',
-    'delete_something' => 'delete :something',
+    'delete' => 'Delete',
+    'delete_something' => 'Delete :something',
 
-    'cancel' => 'cancel',
-    'cancel_something' => 'cancel :something',
+    'cancel' => 'Cancel',
+    'cancel_something' => 'Cancel :something',
 
-    'duplicate' => 'duplicate',
-    'duplicate_something' => 'duplicate :something',
+    'duplicate' => 'Duplicate',
+    'duplicate_something' => 'Duplicate :something',
 
-    'close' => 'close',
-    'close_something' => 'close :something',
+    'close' => 'Close',
+    'close_something' => 'Close :something',
 
-    'see_website' => 'see website',
-    'see_website_addresss' => 'see website :addresss',
+    'see_website' => 'See website',
+    'see_website_addresss' => 'See website :addresss',
 
-    'send' => 'send',
-    'send_something' => 'send :something',
+    'send' => 'Send',
+    'send_something' => 'Send :something',
 
-    'send_email' => 'send an email',
-    'send_email_to_address' => 'send an email to :address',
+    'send_email' => 'Send an email',
+    'send_email_to_address' => 'Send an email to :address',
 
-    'call_phone' => 'call on phone',
-    'call_phone_number' => 'call on phone the :phone-number',
+    'call_phone' => 'Call on phone',
+    'call_phone_number' => 'Call on phone the :phone-number',
 
-    'search' => 'search',
+    'search' => 'Search',
 
-    'copy' => 'copy',
-    'copy_something' => 'copy :something',
+    'copy' => 'Copy',
+    'copy_something' => 'Copy :something',
 
-    'browse' => 'browse',
+    'browse' => 'Browse',
 
-    'up' => 'up',
-    'down' => 'down',
+    'up' => 'Up',
+    'down' => 'Down',
 
-    'login' => 'login',
-    'logout' => 'logout',
+    'login' => 'Login',
+    'logout' => 'Logout',
 ];

@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+1.11.0 (2026-04-10)
+-------------------
+
+- Capitalize first letter of all action translation values (EN & FR)
+
+
 1.10.0 (2026-03-20)
 -------------------
 

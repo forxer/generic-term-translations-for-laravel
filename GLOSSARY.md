@@ -114,7 +114,7 @@
 <summary>Click for details and usage of Add</summary>
 
 - Key: `'add'`
-- Value: `'add'`
+- Value: `'Add'`
 - Usage: `'action.add'`
 
 ```php
@@ -131,7 +131,7 @@ trans('action.add');
 <summary>Click for details and usage of Add Something</summary>
 
 - Key: `'add_something'`
-- Value: `'add :something'`
+- Value: `'Add :something'`
 - Usage: `'action.add_something'`
 
 ```php
@@ -154,7 +154,7 @@ trans('action.add_something', [
 <summary>Click for details and usage of Edit</summary>
 
 - Key: `'edit'`
-- Value: `'edit'`
+- Value: `'Edit'`
 - Usage: `'action.edit'`
 
 ```php
@@ -171,7 +171,7 @@ trans('action.edit');
 <summary>Click for details and usage of Edit Something</summary>
 
 - Key: `'edit_something'`
-- Value: `'edit :something'`
+- Value: `'Edit :something'`
 - Usage: `'action.edit_something'`
 
 ```php
@@ -194,7 +194,7 @@ trans('action.edit_something', [
 <summary>Click for details and usage of Show</summary>
 
 - Key: `'show'`
-- Value: `'show'`
+- Value: `'Show'`
 - Usage: `'action.show'`
 
 ```php
@@ -211,7 +211,7 @@ trans('action.show');
 <summary>Click for details and usage of Show Something</summary>
 
 - Key: `'show_something'`
-- Value: `'show :something'`
+- Value: `'Show :something'`
 - Usage: `'action.show_something'`
 
 ```php
@@ -234,7 +234,7 @@ trans('action.show_something', [
 <summary>Click for details and usage of Preview</summary>
 
 - Key: `'preview'`
-- Value: `'preview'`
+- Value: `'Preview'`
 - Usage: `'action.preview'`
 
 ```php
@@ -251,7 +251,7 @@ trans('action.preview');
 <summary>Click for details and usage of Preview Something</summary>
 
 - Key: `'preview_something'`
-- Value: `'preview :something'`
+- Value: `'Preview :something'`
 - Usage: `'action.preview_something'`
 
 ```php
@@ -274,7 +274,7 @@ trans('action.preview_something', [
 <summary>Click for details and usage of Save</summary>
 
 - Key: `'save'`
-- Value: `'save'`
+- Value: `'Save'`
 - Usage: `'action.save'`
 
 ```php
@@ -291,7 +291,7 @@ trans('action.save');
 <summary>Click for details and usage of Save Something</summary>
 
 - Key: `'save_something'`
-- Value: `'save :something'`
+- Value: `'Save :something'`
 - Usage: `'action.save_something'`
 
 ```php
@@ -365,7 +365,7 @@ trans('action.save_and_new');
 <summary>Click for details and usage of Enable</summary>
 
 - Key: `'enable'`
-- Value: `'enable'`
+- Value: `'Enable'`
 - Usage: `'action.enable'`
 
 ```php
@@ -382,7 +382,7 @@ trans('action.enable');
 <summary>Click for details and usage of Enable Something</summary>
 
 - Key: `'enable_something'`
-- Value: `'enable :something'`
+- Value: `'Enable :something'`
 - Usage: `'action.enable_something'`
 
 ```php
@@ -405,7 +405,7 @@ trans('action.enable_something', [
 <summary>Click for details and usage of Disable</summary>
 
 - Key: `'disable'`
-- Value: `'disable'`
+- Value: `'Disable'`
 - Usage: `'action.disable'`
 
 ```php
@@ -422,7 +422,7 @@ trans('action.disable');
 <summary>Click for details and usage of Disable Something</summary>
 
 - Key: `'disable_something'`
-- Value: `'disable :something'`
+- Value: `'Disable :something'`
 - Usage: `'action.disable_something'`
 
 ```php
@@ -445,7 +445,7 @@ trans('action.disable_something', [
 <summary>Click for details and usage of Archive</summary>
 
 - Key: `'archive'`
-- Value: `'archive'`
+- Value: `'Archive'`
 - Usage: `'action.archive'`
 
 ```php
@@ -462,7 +462,7 @@ trans('action.archive');
 <summary>Click for details and usage of Archive Something</summary>
 
 - Key: `'archive_something'`
-- Value: `'archive :something'`
+- Value: `'Archive :something'`
 - Usage: `'action.archive_something'`
 
 ```php
@@ -485,7 +485,7 @@ trans('action.archive_something', [
 <summary>Click for details and usage of Unarchive</summary>
 
 - Key: `'unarchive'`
-- Value: `'unarchive'`
+- Value: `'Unarchive'`
 - Usage: `'action.unarchive'`
 
 ```php
@@ -502,7 +502,7 @@ trans('action.unarchive');
 <summary>Click for details and usage of Unarchive Something</summary>
 
 - Key: `'unarchive_something'`
-- Value: `'unarchive :something'`
+- Value: `'Unarchive :something'`
 - Usage: `'action.unarchive_something'`
 
 ```php
@@ -525,7 +525,7 @@ trans('action.unarchive_something', [
 <summary>Click for details and usage of Refresh</summary>
 
 - Key: `'refresh'`
-- Value: `'refresh'`
+- Value: `'Refresh'`
 - Usage: `'action.refresh'`
 
 ```php
@@ -542,7 +542,7 @@ trans('action.refresh');
 <summary>Click for details and usage of Refresh Something</summary>
 
 - Key: `'refresh_something'`
-- Value: `'refresh :something'`
+- Value: `'Refresh :something'`
 - Usage: `'action.refresh_something'`
 
 ```php
@@ -565,7 +565,7 @@ trans('action.refresh_something', [
 <summary>Click for details and usage of Reload</summary>
 
 - Key: `'reload'`
-- Value: `'reload'`
+- Value: `'Reload'`
 - Usage: `'action.reload'`
 
 ```php
@@ -582,7 +582,7 @@ trans('action.reload');
 <summary>Click for details and usage of Reload Something</summary>
 
 - Key: `'reload_something'`
-- Value: `'reload :something'`
+- Value: `'Reload :something'`
 - Usage: `'action.reload_something'`
 
 ```php
@@ -605,7 +605,7 @@ trans('action.reload_something', [
 <summary>Click for details and usage of Restore</summary>
 
 - Key: `'restore'`
-- Value: `'restore'`
+- Value: `'Restore'`
 - Usage: `'action.restore'`
 
 ```php
@@ -622,7 +622,7 @@ trans('action.restore');
 <summary>Click for details and usage of Restore Something</summary>
 
 - Key: `'restore_something'`
-- Value: `'restore :something'`
+- Value: `'Restore :something'`
 - Usage: `'action.restore_something'`
 
 ```php
@@ -645,7 +645,7 @@ trans('action.restore_something', [
 <summary>Click for details and usage of Delete</summary>
 
 - Key: `'delete'`
-- Value: `'delete'`
+- Value: `'Delete'`
 - Usage: `'action.delete'`
 
 ```php
@@ -662,7 +662,7 @@ trans('action.delete');
 <summary>Click for details and usage of Delete Something</summary>
 
 - Key: `'delete_something'`
-- Value: `'delete :something'`
+- Value: `'Delete :something'`
 - Usage: `'action.delete_something'`
 
 ```php
@@ -685,7 +685,7 @@ trans('action.delete_something', [
 <summary>Click for details and usage of Cancel</summary>
 
 - Key: `'cancel'`
-- Value: `'cancel'`
+- Value: `'Cancel'`
 - Usage: `'action.cancel'`
 
 ```php
@@ -702,7 +702,7 @@ trans('action.cancel');
 <summary>Click for details and usage of Cancel Something</summary>
 
 - Key: `'cancel_something'`
-- Value: `'cancel :something'`
+- Value: `'Cancel :something'`
 - Usage: `'action.cancel_something'`
 
 ```php
@@ -725,7 +725,7 @@ trans('action.cancel_something', [
 <summary>Click for details and usage of Duplicate</summary>
 
 - Key: `'duplicate'`
-- Value: `'duplicate'`
+- Value: `'Duplicate'`
 - Usage: `'action.duplicate'`
 
 ```php
@@ -742,7 +742,7 @@ trans('action.duplicate');
 <summary>Click for details and usage of Duplicate Something</summary>
 
 - Key: `'duplicate_something'`
-- Value: `'duplicate :something'`
+- Value: `'Duplicate :something'`
 - Usage: `'action.duplicate_something'`
 
 ```php
@@ -765,7 +765,7 @@ trans('action.duplicate_something', [
 <summary>Click for details and usage of Close</summary>
 
 - Key: `'close'`
-- Value: `'close'`
+- Value: `'Close'`
 - Usage: `'action.close'`
 
 ```php
@@ -782,7 +782,7 @@ trans('action.close');
 <summary>Click for details and usage of Close Something</summary>
 
 - Key: `'close_something'`
-- Value: `'close :something'`
+- Value: `'Close :something'`
 - Usage: `'action.close_something'`
 
 ```php
@@ -805,7 +805,7 @@ trans('action.close_something', [
 <summary>Click for details and usage of See Website</summary>
 
 - Key: `'see_website'`
-- Value: `'see website'`
+- Value: `'See website'`
 - Usage: `'action.see_website'`
 
 ```php
@@ -822,7 +822,7 @@ trans('action.see_website');
 <summary>Click for details and usage of See Website Addresss</summary>
 
 - Key: `'see_website_addresss'`
-- Value: `'see website :addresss'`
+- Value: `'See website :addresss'`
 - Usage: `'action.see_website_addresss'`
 
 ```php
@@ -845,7 +845,7 @@ trans('action.see_website_addresss', [
 <summary>Click for details and usage of Send</summary>
 
 - Key: `'send'`
-- Value: `'send'`
+- Value: `'Send'`
 - Usage: `'action.send'`
 
 ```php
@@ -862,7 +862,7 @@ trans('action.send');
 <summary>Click for details and usage of Send Something</summary>
 
 - Key: `'send_something'`
-- Value: `'send :something'`
+- Value: `'Send :something'`
 - Usage: `'action.send_something'`
 
 ```php
@@ -885,7 +885,7 @@ trans('action.send_something', [
 <summary>Click for details and usage of Send Email</summary>
 
 - Key: `'send_email'`
-- Value: `'send an email'`
+- Value: `'Send an email'`
 - Usage: `'action.send_email'`
 
 ```php
@@ -902,7 +902,7 @@ trans('action.send_email');
 <summary>Click for details and usage of Send Email To Address</summary>
 
 - Key: `'send_email_to_address'`
-- Value: `'send an email to :address'`
+- Value: `'Send an email to :address'`
 - Usage: `'action.send_email_to_address'`
 
 ```php
@@ -925,7 +925,7 @@ trans('action.send_email_to_address', [
 <summary>Click for details and usage of Call Phone</summary>
 
 - Key: `'call_phone'`
-- Value: `'call on phone'`
+- Value: `'Call on phone'`
 - Usage: `'action.call_phone'`
 
 ```php
@@ -942,7 +942,7 @@ trans('action.call_phone');
 <summary>Click for details and usage of Call Phone Number</summary>
 
 - Key: `'call_phone_number'`
-- Value: `'call on phone the :phone-number'`
+- Value: `'Call on phone the :phone-number'`
 - Usage: `'action.call_phone_number'`
 
 ```php
@@ -965,7 +965,7 @@ trans('action.call_phone_number', [
 <summary>Click for details and usage of Search</summary>
 
 - Key: `'search'`
-- Value: `'search'`
+- Value: `'Search'`
 - Usage: `'action.search'`
 
 ```php
@@ -982,7 +982,7 @@ trans('action.search');
 <summary>Click for details and usage of Copy</summary>
 
 - Key: `'copy'`
-- Value: `'copy'`
+- Value: `'Copy'`
 - Usage: `'action.copy'`
 
 ```php
@@ -999,7 +999,7 @@ trans('action.copy');
 <summary>Click for details and usage of Copy Something</summary>
 
 - Key: `'copy_something'`
-- Value: `'copy :something'`
+- Value: `'Copy :something'`
 - Usage: `'action.copy_something'`
 
 ```php
@@ -1022,7 +1022,7 @@ trans('action.copy_something', [
 <summary>Click for details and usage of Browse</summary>
 
 - Key: `'browse'`
-- Value: `'browse'`
+- Value: `'Browse'`
 - Usage: `'action.browse'`
 
 ```php
@@ -1039,7 +1039,7 @@ trans('action.browse');
 <summary>Click for details and usage of Up</summary>
 
 - Key: `'up'`
-- Value: `'up'`
+- Value: `'Up'`
 - Usage: `'action.up'`
 
 ```php
@@ -1056,7 +1056,7 @@ trans('action.up');
 <summary>Click for details and usage of Down</summary>
 
 - Key: `'down'`
-- Value: `'down'`
+- Value: `'Down'`
 - Usage: `'action.down'`
 
 ```php
@@ -1073,7 +1073,7 @@ trans('action.down');
 <summary>Click for details and usage of Login</summary>
 
 - Key: `'login'`
-- Value: `'login'`
+- Value: `'Login'`
 - Usage: `'action.login'`
 
 ```php
@@ -1090,7 +1090,7 @@ trans('action.login');
 <summary>Click for details and usage of Logout</summary>
 
 - Key: `'logout'`
-- Value: `'logout'`
+- Value: `'Logout'`
 - Usage: `'action.logout'`
 
 ```php

@@ -14,6 +14,11 @@ return [
     'GB' => 'GB',
     'TB' => 'TB',
 
+    'KiB' => 'KiB',
+    'MiB' => 'MiB',
+    'GiB' => 'GiB',
+    'TiB' => 'TiB',
+
     'millimeter' => 'millimeter',
     'centimeter' => 'centimeter',
     'meter' => 'meter',

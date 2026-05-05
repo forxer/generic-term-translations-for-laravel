@@ -1,6 +1,16 @@
 CHANGELOG
 =========
 
+1.12.0 (2026-05-05)
+-------------------
+
+- Added IEC binary prefix terms for byte sizes:
+    - `unit.KiB`
+    - `unit.MiB`
+    - `unit.GiB`
+    - `unit.TiB`
+
+
 1.11.0 (2026-04-10)
 -------------------
 

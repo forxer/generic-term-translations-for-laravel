@@ -100,8 +100,9 @@
 | :-----: | :-----: | :-----: | :-----: | :-----: |
 |[B](#b)|[Bit](#bit)|[Bits](#bits)|[B](#b)|[Byte](#byte)|
 |[Bytes](#bytes)|[Kb](#kb)|[Mb](#mb)|[Gb](#gb)|[Tb](#tb)|
-|[Millimeter](#millimeter)|[Centimeter](#centimeter)|[Meter](#meter)|[Kilometer](#kilometer)|[Gram](#gram)|
-|[Kilogram](#kilogram)|[Milliliter](#milliliter)|[Deciliter](#deciliter)|[Liter](#liter)| |
+|[Kib](#kib)|[Mib](#mib)|[Gib](#gib)|[Tib](#tib)|[Millimeter](#millimeter)|
+|[Centimeter](#centimeter)|[Meter](#meter)|[Kilometer](#kilometer)|[Gram](#gram)|[Kilogram](#kilogram)|
+|[Milliliter](#milliliter)|[Deciliter](#deciliter)|[Liter](#liter)| | |
 
 
 
@@ -2772,6 +2773,74 @@ trans('unit.GB');
 
 ```php
 trans('unit.TB');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Kib
+
+<details>
+<summary>Click for details and usage of Kib</summary>
+
+- Key: `'KiB'`
+- Value: `'KiB'`
+- Usage: `'unit.KiB'`
+
+```php
+trans('unit.KiB');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Mib
+
+<details>
+<summary>Click for details and usage of Mib</summary>
+
+- Key: `'MiB'`
+- Value: `'MiB'`
+- Usage: `'unit.MiB'`
+
+```php
+trans('unit.MiB');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Gib
+
+<details>
+<summary>Click for details and usage of Gib</summary>
+
+- Key: `'GiB'`
+- Value: `'GiB'`
+- Usage: `'unit.GiB'`
+
+```php
+trans('unit.GiB');
+```
+
+</details>
+
+[Back to top ^](#glossary)
+
+### Tib
+
+<details>
+<summary>Click for details and usage of Tib</summary>
+
+- Key: `'TiB'`
+- Value: `'TiB'`
+- Usage: `'unit.TiB'`
+
+```php
+trans('unit.TiB');
 ```
 
 </details>

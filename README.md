@@ -72,9 +72,11 @@ trans('misc.all_fem'); // return: "toutes"
 Development steps
 -----------------
 
-1. From the package directory, run `php composer update`
-2. Update the sources as needed in `src/source` files
+1. From the package directory, run `composer update`
+2. Update the sources as needed in `source/` files
 3. Run the console command `php vendor/bin/lang sync`
-4. Translate modifications in `src/locales/{locale}/php.json`
+4. Translate modifications in `locales/{locale}/php.json`
 5. Run `php generate-glossary`
-6. Commit changes
+6. Run `vendor/bin/phpunit` to check key consistency across locales
+7. Run `./vendor/bin/pint` to format the code
+8. Commit changes

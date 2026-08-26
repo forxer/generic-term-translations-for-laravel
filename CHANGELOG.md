@@ -1,6 +1,20 @@
 CHANGELOG
 =========
 
+2.0.0 (2026-08-26)
+------------------
+
+- Aligned project structure and tooling with the official [Laravel-Lang translations template](https://github.com/Laravel-Lang/translations-template)
+- **BREAKING**: raised the minimum PHP version from `8.1` to `8.4`. Projects running PHP 8.1 to 8.3 should stay on `1.12.0`.
+- **BREAKING**: dropped support for `laravel-lang/publisher` `^14.1` and `^15.0`, now requires `^16.0`
+- **BREAKING**: dropped support for `laravel-lang/status-generator` `^1.19`, now requires `^2.14.0`
+- **BREAKING**: renamed `placeholder.search` to `placeholder.search_placeholder`. It collided with `action.search`, which silently received the placeholder wording instead of its own.
+- Added automated key consistency tests based on `laravel-lang/status-generator`
+- Added a test asserting every `en` locale value matches its source file
+- Fixed missing `unit.KiB`, `unit.MiB`, `unit.GiB` and `unit.TiB` keys in the `en` locale
+- Fixed 48 `action` values in the `en` locale that were left uncapitalized when `1.11.0` capitalized the source files
+
+
 1.12.0 (2026-05-05)
 -------------------
 

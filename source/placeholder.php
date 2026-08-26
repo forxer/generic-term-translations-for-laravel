@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'search' => 'Search...',
+    'search_placeholder' => 'Search...',
 ];

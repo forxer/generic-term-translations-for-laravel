@@ -19,7 +19,7 @@ final readonly class GlossaryBuilder
     /**
      * Locale listed first in the glossary, all others following alphabetically.
      */
-    public const REFERENCE_LOCALE = 'en';
+    public const string REFERENCE_LOCALE = 'en';
 
     public function __construct(private string $basePath) {}
 
@@ -63,6 +63,8 @@ final readonly class GlossaryBuilder
     {
         $files = glob($this->basePath.'/source/*.php') ?: [];
 
+        // glob() already sorts, but the domain order of the glossary is a documented
+        // guarantee rather than a side effect of the platform.
         sort($files);
 
         return $files;
@@ -96,6 +98,9 @@ final readonly class GlossaryBuilder
         ksort($translations);
 
         if (\array_key_exists(self::REFERENCE_LOCALE, $translations)) {
+            // Spreading a duplicate string key overwrites the value without moving its
+            // insertion position, so the reference locale comes first and the others
+            // keep the alphabetical order set above.
             $translations = [
                 self::REFERENCE_LOCALE => $translations[self::REFERENCE_LOCALE],
                 ...$translations,
@@ -112,8 +117,10 @@ final readonly class GlossaryBuilder
     {
         $decoded = json_decode((string) file_get_contents($file), true);
 
+        // An unreadable file decodes to null just like a malformed one, hence the
+        // wording covering both cases.
         if (! \is_array($decoded)) {
-            throw new RuntimeException(\sprintf('Locale file "%s" does not contain a JSON object.', $file));
+            throw new RuntimeException(\sprintf('Locale file "%s" could not be read as a JSON object.', $file));
         }
 
         return $decoded;

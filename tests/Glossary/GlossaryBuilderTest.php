@@ -119,7 +119,7 @@ class GlossaryBuilderTest extends TestCase
         $this->writeFile('locales/en/php.json', '{ not json');
 
         $this->expectException(RuntimeException::class);
-        $this->expectExceptionMessage('does not contain a JSON object');
+        $this->expectExceptionMessage('could not be read as a JSON object');
 
         (new GlossaryBuilder($this->root))->build();
     }

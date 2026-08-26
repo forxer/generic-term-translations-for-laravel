@@ -38,3 +38,8 @@ jobs:
       - name: Check code style
         if: matrix.php == '8.4'
         run: vendor/bin/pint --test
+
+      # Must stay after the test suite: regenerating first would hide a stale
+      # GLOSSARY.md from GlossaryUpToDateTest.
+      - name: Run the glossary generator
+        run: composer glossary

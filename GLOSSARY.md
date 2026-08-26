@@ -80,7 +80,7 @@
 
 |         |         |         |         |         |
 | :-----: | :-----: | :-----: | :-----: | :-----: |
-|[Search](#search)| | | | |
+|[Search Placeholder](#search-placeholder)| | | | |
 
 
 [**Status**](#status)
@@ -2214,17 +2214,17 @@ trans('number.thousands_separator');
 
 ## Placeholder
 
-### Search
+### Search Placeholder
 
 <details>
-<summary>Click for details and usage of Search</summary>
+<summary>Click for details and usage of Search Placeholder</summary>
 
-- Key: `'search'`
+- Key: `'search_placeholder'`
 - Value: `'Search...'`
-- Usage: `'placeholder.search'`
+- Usage: `'placeholder.search_placeholder'`
 
 ```php
-trans('placeholder.search');
+trans('placeholder.search_placeholder');
 ```
 
 </details>

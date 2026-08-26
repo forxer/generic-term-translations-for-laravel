@@ -1,8 +1,10 @@
 /.editorconfig      export-ignore
 /.gitattributes     export-ignore
+/.github/           export-ignore
 /.gitignore         export-ignore
 /CLAUDE.md          export-ignore
 /generate-glossary  export-ignore
 /phpunit.xml        export-ignore
 /pint.json          export-ignore
 /tests/             export-ignore
+/tools/             export-ignore

@@ -14,6 +14,11 @@ CHANGELOG
 - Added a test asserting every `en` locale value matches its source file
 - Fixed missing `unit.KiB`, `unit.MiB`, `unit.GiB` and `unit.TiB` keys in the `en` locale
 - Fixed 48 `action` values in the `en` locale that no longer matched their source values
+- Rewrote the glossary generator as tested classes under `tools/Glossary/`, excluded from the distribution archive. Added the `composer glossary`, `composer test` and `composer lint` scripts.
+- Reworked [GLOSSARY.md](GLOSSARY.md) as one table per domain, with a column per locale: every term now shows its translations side by side, in 282 lines instead of 3002.
+- Added a test asserting `GLOSSARY.md` matches `source/` and `locales/`, so it can no longer silently drift, and a GitHub Actions workflow running the test suite and the code style check.
+- Fixed the glossary usage example of `action.call_phone_number`, which rendered the invalid PHP `e($phone-number)`.
+- Fixed the colliding `unit.b` and `unit.B` glossary anchors, which both pointed to the same entry.
 
 
 1.12.0 (2026-05-05)

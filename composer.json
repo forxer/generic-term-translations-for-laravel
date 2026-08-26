@@ -23,12 +23,13 @@
         "laravel-lang/publisher": "^16.0"
     },
     "require-dev": {
+        "ext-mbstring": "*",
         "illuminate/filesystem": "^10.46 || ^11.51.0",
         "illuminate/support": "^10.46 || ^11.51.0",
-        "laravel-lang/status-generator": "^2.14.0",
-        "laravel/pint": "^1.29.0",
-        "phpunit/phpunit": "^10.5.63",
-        "symfony/var-dumper": "^6.4.36"
+        "laravel-lang/status-generator": "^2.16.0",
+        "laravel/pint": "^1.30.5",
+        "phpunit/phpunit": "^10.5.64",
+        "symfony/var-dumper": "^6.4.44"
     },
     "autoload": {
         "psr-4": {
@@ -37,8 +38,14 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests"
+            "Tests\\": "tests",
+            "GenericTermTranslations\\Tools\\": "tools"
         }
+    },
+    "scripts": {
+        "glossary": "@php generate-glossary",
+        "test": "phpunit",
+        "lint": "pint"
     },
     "extra": {
         "laravel": {

@@ -84,7 +84,10 @@ Development steps
 2. Update the sources as needed in `source/` files
 3. Run the console command `php vendor/bin/lang sync`
 4. Translate modifications in `locales/{locale}/php.json`
-5. Run `php generate-glossary`
-6. Run `vendor/bin/phpunit` to check key consistency across locales
-7. Run `./vendor/bin/pint` to format the code
+5. Run `composer glossary` to regenerate [GLOSSARY.md](GLOSSARY.md)
+6. Run `composer test` to check key consistency across locales and that the glossary is up to date
+7. Run `composer lint` to format the code
 8. Commit changes
+
+`GLOSSARY.md` is a generated file: it is built from `source/` and `locales/`, and must
+never be edited by hand. `composer test` fails when it no longer matches them.

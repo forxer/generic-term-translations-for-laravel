@@ -57,7 +57,7 @@ class MarkdownRendererTest extends TestCase
 
             MARKDOWN;
 
-        $this->assertSame($expected, (new MarkdownRenderer)->render($glossary));
+        $this->assertSame($expected, (new MarkdownRenderer())->render($glossary));
     }
 
     public function test_it_renders_an_untranslated_value_as_a_dash(): void
@@ -158,7 +158,7 @@ class MarkdownRendererTest extends TestCase
 
     private function render(Term $term): string
     {
-        return (new MarkdownRenderer)->render(
+        return (new MarkdownRenderer())->render(
             new Glossary([new Domain('action', [$term])], ['en', 'fr'])
         );
     }

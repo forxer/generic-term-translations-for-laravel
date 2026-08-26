@@ -14,7 +14,7 @@ class GlossaryUpToDateTest extends TestCase
     {
         $basePath = \dirname(__DIR__);
 
-        $expected = (new MarkdownRenderer)->render((new GlossaryBuilder($basePath))->build());
+        $expected = (new MarkdownRenderer())->render((new GlossaryBuilder($basePath))->build());
 
         $this->assertSame(
             $expected,

@@ -7,12 +7,13 @@
             "scope": "namespaced",
             "strict": true
         },
-        "new_with_braces": {
+        "new_with_parentheses": {
             "anonymous_class": false,
             "named_class": true
         },
         "blank_line_before_statement": {
             "statements": [
+                "break",
                 "case",
                 "continue",
                 "declare",

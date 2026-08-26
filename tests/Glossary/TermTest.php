@@ -54,4 +54,12 @@ class TermTest extends TestCase
 
         $this->assertSame('something', $term->placeholders[0]->name);
     }
+
+    public function test_it_has_no_placeholder_when_no_locale_translates_the_key(): void
+    {
+        $term = new Term('add_something', ['en' => null, 'fr' => null]);
+
+        $this->assertSame([], $term->placeholders);
+        $this->assertFalse($term->hasPlaceholders());
+    }
 }

@@ -9,7 +9,7 @@ namespace GenericTermTranslations\Tools\Glossary;
  */
 final class MarkdownRenderer
 {
-    private const UNTRANSLATED = '—';
+    private const string UNTRANSLATED = '—';
 
     public function render(Glossary $glossary): string
     {
@@ -33,13 +33,15 @@ final class MarkdownRenderer
 
     private function header(Glossary $glossary): string
     {
+        $termCount = $glossary->termCount();
+
         $stats = [
-            $this->plural($glossary->termCount(), 'term'),
+            $this->plural($termCount, 'term'),
             $this->plural(\count($glossary->domains), 'domain'),
         ];
 
         foreach ($glossary->locales as $locale) {
-            $stats[] = \sprintf('%s %d/%d', $locale, $glossary->translatedCount($locale), $glossary->termCount());
+            $stats[] = \sprintf('%s %d/%d', $locale, $glossary->translatedCount($locale), $termCount);
         }
 
         return '> '.implode(' · ', $stats)."\n"
@@ -98,21 +100,14 @@ final class MarkdownRenderer
 
     private function cell(?string $value): string
     {
-        if ($value === null) {
-            return self::UNTRANSLATED;
-        }
-
-        if ($value === '') {
-            return '`(empty)`';
-        }
-
-        // A value made only of spaces — the French thousands separator is a non-breaking
-        // space — would render as a cell indistinguishable from an untranslated one.
-        if (preg_match('/^[\pZ\s]+$/u', $value) === 1) {
-            return \sprintf('`%s`', $this->codePoints($value));
-        }
-
-        return str_replace('|', '\|', $value);
+        return match (true) {
+            $value === null => self::UNTRANSLATED,
+            $value === '' => '`(empty)`',
+            // A value made only of spaces — the French thousands separator is a non-breaking
+            // space — would render as a cell indistinguishable from an untranslated one.
+            preg_match('/^[\pZ\s]+$/u', $value) === 1 => \sprintf('`%s`', $this->codePoints($value)),
+            default => str_replace('|', '\|', $value),
+        };
     }
 
     private function codePoints(string $value): string

@@ -17,24 +17,27 @@ final readonly class Glossary
 
     public function termCount(): int
     {
-        return array_sum(array_map(
-            static fn (Domain $domain): int => \count($domain->terms),
-            $this->domains
-        ));
+        return \count($this->terms());
     }
 
     public function translatedCount(string $locale): int
     {
-        $count = 0;
+        return \count(array_filter(
+            $this->terms(),
+            static fn (Term $term): bool => $term->value($locale) !== null
+        ));
+    }
 
-        foreach ($this->domains as $domain) {
-            foreach ($domain->terms as $term) {
-                if ($term->value($locale) !== null) {
-                    $count++;
-                }
-            }
-        }
-
-        return $count;
+    /**
+     * Every term of every domain, flattened.
+     *
+     * @return Term[]
+     */
+    private function terms(): array
+    {
+        return array_merge(...array_map(
+            static fn (Domain $domain): array => $domain->terms,
+            $this->domains
+        ));
     }
 }

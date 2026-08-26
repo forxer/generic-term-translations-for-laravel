@@ -39,12 +39,6 @@ final readonly class Term
      */
     private static function firstTranslatedValue(array $values): string
     {
-        foreach ($values as $value) {
-            if ($value !== null) {
-                return $value;
-            }
-        }
-
-        return '';
+        return array_find($values, static fn (?string $value): bool => $value !== null) ?? '';
     }
 }

@@ -37,6 +37,14 @@ composer lint
 - `tests/Glossary/` — Unit tests for the generator classes. `tests/PluginTest.php` checks key consistency between `source/` and `locales/` via `laravel-lang/status-generator`.
 - `.github/workflows/tests.yml` — Runs the test suite on PHP 8.4 and 8.5, the code style check, then the glossary generator.
 
+### Laravel Boost Assets
+
+The package provides Laravel Boost integration assets in `resources/boost/`:
+- **Guidelines** (`guidelines/core.blade.php`): Package overview loaded into every session of every consuming project. Budget: 6 bullet points, critical pitfalls only.
+- **Skill** (`skills/generic-term-translations/SKILL.md`): Domain reference, parameterized terms and escaping, the `_fem` gender convention, number separators, and the publisher workflow.
+
+**Important:** These files must be kept up to date when domains, keys, or usage patterns change. When adding, renaming, or removing terms, update the corresponding Boost assets accordingly — in particular the domain table and term counts in the skill.
+
 ## Translation Conventions
 
 - Keys use `snake_case`, organized by domain (action, status, error, etc.)

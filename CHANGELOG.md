@@ -20,6 +20,7 @@ CHANGELOG
 - Fixed the glossary usage example of `action.call_phone_number`, which rendered the invalid PHP `e($phone-number)`.
 - Fixed the colliding `unit.b` and `unit.B` glossary anchors, which both pointed to the same entry.
 - Removed the unused `illuminate/filesystem` dev dependency, and widened `symfony/var-dumper` from `^6.4.44` to `^6.4 || ^7.0 || ^8.0` so it is no longer pinned to `6.4` next to Symfony `8` packages.
+- Added [Laravel Boost](https://github.com/laravel/boost) assets under `resources/boost/`: guidelines covering the critical pitfalls (escaping parameterized terms, the `_fem` gender convention, never editing the published locale files), and a `generic-term-translations` skill documenting the domains, the publisher workflow and the number separators.
 
 
 1.12.0 (2026-05-05)

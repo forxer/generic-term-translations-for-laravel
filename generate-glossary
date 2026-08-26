@@ -10,7 +10,11 @@ require __DIR__.'/vendor/autoload.php';
 
 $glossary = (new GlossaryBuilder(__DIR__))->build();
 
-file_put_contents(__DIR__.'/GLOSSARY.md', (new MarkdownRenderer)->render($glossary));
+if (file_put_contents(__DIR__.'/GLOSSARY.md', (new MarkdownRenderer)->render($glossary)) === false) {
+    fwrite(STDERR, "Unable to write GLOSSARY.md.\n");
+
+    exit(1);
+}
 
 printf(
     "GLOSSARY.md written: %d terms, %d domains, locales: %s.\n",

@@ -29,9 +29,16 @@ final readonly class Placeholder
     {
         preg_match_all('/:([a-zA-Z_-]+)/u', $value, $matches);
 
+        // Laravel substitutes the longest matching name, so a separator right before the
+        // end of the placeholder is literal text: ":address-" names the parameter "address".
+        $names = array_filter(array_map(
+            static fn (string $name): string => rtrim($name, '-_'),
+            $matches[1]
+        ));
+
         return array_values(array_map(
             static fn (string $name): self => new self($name),
-            array_unique($matches[1])
+            array_unique($names)
         ));
     }
 

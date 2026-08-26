@@ -72,6 +72,17 @@ class PlaceholderTest extends TestCase
         $this->assertSame(['name'], $this->namesExtractedFrom('Hello :name, goodbye :name'));
     }
 
+    public function test_it_drops_a_separator_trailing_the_placeholder(): void
+    {
+        $this->assertSame(['address'], $this->namesExtractedFrom('See :address- now'));
+        $this->assertSame(['address'], $this->namesExtractedFrom('See :address_ now'));
+    }
+
+    public function test_it_extracts_nothing_from_a_colon_followed_only_by_separators(): void
+    {
+        $this->assertSame([], $this->namesExtractedFrom('A rule written as :--- here'));
+    }
+
     /**
      * @return string[]
      */

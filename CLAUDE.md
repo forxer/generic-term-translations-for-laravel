@@ -34,11 +34,13 @@ composer lint
 - `src/ServiceProvider.php` → `src/Plugin.php` → `src/Plugins/Main.php` — Laravel Lang Publisher integration (maps source files to locale paths).
 - `tools/Glossary/` — Classes building GLOSSARY.md from `source/` and `locales/`, driven by the `generate-glossary` script. Excluded from the distribution archive.
 - `GLOSSARY.md` — **Generated file, never edit by hand.** Run `composer glossary` after touching `source/`; `GlossaryUpToDateTest` fails when it is stale.
+- `tests/Glossary/` — Unit tests for the generator classes. `tests/PluginTest.php` checks key consistency between `source/` and `locales/` via `laravel-lang/status-generator`.
+- `.github/workflows/tests.yml` — Runs the test suite on PHP 8.4 and 8.5, the code style check, then the glossary generator.
 
 ## Translation Conventions
 
 - Keys use `snake_case`, organized by domain (action, status, error, etc.)
-- Parameterized strings use `:parameter` placeholders (e.g., `'add_something' => 'add :something'`)
+- Parameterized strings use `:parameter` placeholders (e.g., `'add_something' => 'Add :something'`)
 - Feminine variants use `_fem` suffix (e.g., `all` / `all_fem`)
 - French translations require proper Unicode typography:
   - Typographic apostrophe `'` (U+2019), never ASCII `'`

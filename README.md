@@ -14,7 +14,7 @@ Require the project using Composer:
 composer require forxer/generic-term-translations-for-laravel --dev
 ```
 
-> **Upgrading from 1.x?** Read the [upgrade guide](UPGRADE.md) first — version 2.0 requires PHP 8.4 and renames one translation key.
+> **Upgrading from 1.x?** Read the [upgrade guide](UPGRADE.md) first.
 
 Then use the locales publisher of [Laravel Lang](https://laravel-lang.com/) to add/update/reset or remove translations of this package:
 - If you have never used [Laravel Lang](https://laravel-lang.com/): [add locales](https://laravel-lang.com/usage/add-locales.html).

@@ -20,6 +20,12 @@ Then use the locales publisher of [Laravel Lang](https://laravel-lang.com/) to a
 - If you have never used [Laravel Lang](https://laravel-lang.com/): [add locales](https://laravel-lang.com/usage/add-locales.html).
 - If you are already using [Laravel Lang](https://laravel-lang.com/): just [update the locales](https://laravel-lang.com/usage/update-locales.html).
 
+Requirements
+------------
+
+- PHP `^8.4`
+- `laravel-lang/publisher` `^16.0`
+
 Usage
 -----
 
@@ -35,14 +41,14 @@ trans('action.add_something', [
     'something' => 'a post',
 ]);
 
-// return: "add a post"
+// return: "Add a post"
 
 // "fr" locale
 trans('action.add_something', [
     'something' => 'un article',
 ]);
 
-// return: "ajouter un article"
+// return: "Ajouter un article"
 ```
 
 Be careful to escape the data that you do not control:

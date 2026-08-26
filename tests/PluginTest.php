@@ -14,6 +14,8 @@ class PluginTest extends BaseTestCase
     {
         $locale = json_decode(file_get_contents(__DIR__.'/../locales/en/php.json'), true);
 
+        $tested_keys_count = 0;
+
         foreach (glob(__DIR__.'/../source/*.php') as $file) {
             foreach (require $file as $key => $value) {
                 $this->assertSame(
@@ -21,7 +23,11 @@ class PluginTest extends BaseTestCase
                     $locale[$key] ?? null,
                     \sprintf('Key "%s" from %s does not match the en locale.', $key, basename($file))
                 );
+
+                $tested_keys_count++;
             }
         }
+
+        $this->assertGreaterThan(0, $tested_keys_count, 'No source keys were tested; check the glob pattern.');
     }
 }

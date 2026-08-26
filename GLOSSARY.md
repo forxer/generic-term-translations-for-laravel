@@ -12,7 +12,7 @@
 |[Unarchive Something](#unarchive-something)|[Refresh](#refresh)|[Refresh Something](#refresh-something)|[Reload](#reload)|[Reload Something](#reload-something)|
 |[Restore](#restore)|[Restore Something](#restore-something)|[Delete](#delete)|[Delete Something](#delete-something)|[Cancel](#cancel)|
 |[Cancel Something](#cancel-something)|[Duplicate](#duplicate)|[Duplicate Something](#duplicate-something)|[Close](#close)|[Close Something](#close-something)|
-|[See Website](#see-website)|[See Website Addresss](#see-website-addresss)|[Send](#send)|[Send Something](#send-something)|[Send Email](#send-email)|
+|[See Website](#see-website)|[See Website Address](#see-website-address)|[Send](#send)|[Send Something](#send-something)|[Send Email](#send-email)|
 |[Send Email To Address](#send-email-to-address)|[Call Phone](#call-phone)|[Call Phone Number](#call-phone-number)|[Search](#search)|[Copy](#copy)|
 |[Copy Something](#copy-something)|[Browse](#browse)|[Up](#up)|[Down](#down)|[Login](#login)|
 |[Logout](#logout)| | | | |
@@ -817,22 +817,22 @@ trans('action.see_website');
 
 [Back to top ^](#glossary)
 
-### See Website Addresss
+### See Website Address
 
 <details>
-<summary>Click for details and usage of See Website Addresss</summary>
+<summary>Click for details and usage of See Website Address</summary>
 
-- Key: `'see_website_addresss'`
-- Value: `'See website :addresss'`
-- Usage: `'action.see_website_addresss'`
+- Key: `'see_website_address'`
+- Value: `'See website :address'`
+- Usage: `'action.see_website_address'`
 
 ```php
-trans('action.see_website_addresss', [
-    'addresss' => 'addresss',
+trans('action.see_website_address', [
+    'address' => 'address',
 ]);
 
-trans('action.see_website_addresss', [
-    'addresss' => e($addresss),
+trans('action.see_website_address', [
+    'address' => e($address),
 ]);
 ```
 

@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-2.0.0 (2026-08-26)
+2.0.0 UNRELEASED
 ------------------
 
 - Aligned tooling and dependency constraints with the official [Laravel-Lang translations template](https://github.com/Laravel-Lang/translations-template)
@@ -9,6 +9,7 @@ CHANGELOG
 - **BREAKING**: dropped support for `laravel-lang/publisher` `^14.1` and `^15.0`, now requires `^16.0`
 - Dropped support for `laravel-lang/status-generator` `^1.19` (a `require-dev` dependency only), now requires `^2.14.0`
 - **BREAKING**: renamed `placeholder.search` to `placeholder.search_placeholder`. It collided with `action.search`, which silently received the placeholder wording instead of its own.
+- **BREAKING**: renamed `action.see_website_addresss` to `action.see_website_address` and its `:addresss` parameter to `:address`. Both were misspelled with three `s` since `1.9.0`.
 - Added automated key consistency tests based on `laravel-lang/status-generator`
 - Added a test asserting every `en` locale value matches its source file
 - Fixed missing `unit.KiB`, `unit.MiB`, `unit.GiB` and `unit.TiB` keys in the `en` locale

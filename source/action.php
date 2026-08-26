@@ -49,7 +49,7 @@ return [
     'close_something' => 'Close :something',
 
     'see_website' => 'See website',
-    'see_website_addresss' => 'See website :addresss',
+    'see_website_address' => 'See website :address',
 
     'send' => 'Send',
     'send_something' => 'Send :something',

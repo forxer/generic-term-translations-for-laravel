@@ -18,14 +18,14 @@
         "source": "https://github.com/forxer/generic-term-translations-for-laravel"
     },
     "require": {
-        "php": "^8.1",
+        "php": "^8.4",
         "ext-json": "*",
-        "laravel-lang/publisher": "^14.1 || ^15.0 || ^16.0"
+        "laravel-lang/publisher": "^16.0"
     },
     "require-dev": {
         "illuminate/filesystem": "^10.46 || ^11.51.0",
         "illuminate/support": "^10.46 || ^11.51.0",
-        "laravel-lang/status-generator": "^1.19 || ^2.14.0",
+        "laravel-lang/status-generator": "^2.14.0",
         "laravel/pint": "^1.29.0",
         "phpunit/phpunit": "^10.5.63",
         "symfony/var-dumper": "^6.4.36"

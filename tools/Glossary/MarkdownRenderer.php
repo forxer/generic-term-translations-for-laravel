@@ -150,28 +150,20 @@ final class MarkdownRenderer
     {
         $arguments = array_map(
             static fn (Placeholder $placeholder): string => \sprintf(
-                "'%s' => e($%s),",
+                "'%s' => e($%s)",
                 $placeholder->name,
                 $placeholder->variable
             ),
             $term->placeholders
         );
 
-        if (\count($arguments) === 1) {
-            return \sprintf(
-                "trans('%s.%s', [%s]);",
-                $domainName,
-                $term->key,
-                rtrim($arguments[0], ',')
-            );
-        }
+        // A single argument stays inline, several are spread over one indented line each.
+        // Terms without any placeholder never reach here: usage() filters them out.
+        $list = \count($arguments) === 1
+            ? $arguments[0]
+            : "\n    ".implode(",\n    ", $arguments).",\n";
 
-        return \sprintf(
-            "trans('%s.%s', [\n    %s\n]);",
-            $domainName,
-            $term->key,
-            implode("\n    ", $arguments)
-        );
+        return \sprintf("trans('%s.%s', [%s]);", $domainName, $term->key, $list);
     }
 
     private function plural(int $count, string $noun): string

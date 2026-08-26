@@ -26,30 +26,28 @@ final readonly class GlossaryBuilder
     public function build(): Glossary
     {
         $translations = $this->translations();
-        $locales = array_keys($translations);
 
         $domains = [];
 
         foreach ($this->sourceFiles() as $file) {
-            $domains[] = $this->domain($file, $translations, $locales);
+            $domains[] = $this->domain($file, $translations);
         }
 
-        return new Glossary($domains, $locales);
+        return new Glossary($domains, array_keys($translations));
     }
 
     /**
      * @param  array<string,array<string,string>>  $translations
-     * @param  string[]  $locales
      */
-    private function domain(string $file, array $translations, array $locales): Domain
+    private function domain(string $file, array $translations): Domain
     {
         $terms = [];
 
-        foreach ($this->definitions($file) as $key => $value) {
+        foreach (array_keys($this->definitions($file)) as $key) {
             $values = [];
 
-            foreach ($locales as $locale) {
-                $values[$locale] = $translations[$locale][$key] ?? null;
+            foreach ($translations as $locale => $entries) {
+                $values[$locale] = $entries[$key] ?? null;
             }
 
             $terms[] = new Term((string) $key, $values);

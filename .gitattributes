@@ -1,3 +1,6 @@
+# GLOSSARY.md is compared byte for byte with the generator output, which emits LF.
+*.md                text eol=lf
+
 /.editorconfig      export-ignore
 /.gitattributes     export-ignore
 /.github/           export-ignore
